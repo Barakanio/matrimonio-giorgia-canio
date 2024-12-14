@@ -132,11 +132,11 @@ HOME
 
 /* Set height for images on the hero section */
 .home .hero .img-top.img-left {
-    height: 45vh;
+    height: 35vh;
 }
 
 .home .hero .img-top.img-right {
-    height: 45vh;
+    height: 40vh;
 }
 
 .home .hero .img-bottom.img-left {
