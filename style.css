@@ -647,6 +647,8 @@ ANIMATIONS
     margin-top: 100px; /* Sposta tutto il blocco verso il basso */
     text-align: center; /* Mantiene il contenuto centrato */
     position: relative; /* Necessario per controllare margini e spostamenti */
+    -webkit-animation: focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation: focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
 }
 
 @-webkit-keyframes focus-in {
