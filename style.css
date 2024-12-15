@@ -1272,6 +1272,7 @@ RESPONSIVENESS
 
     .home section.hero .img-bottom.img-right {
         height: 50vw;
+        bottom: 100px; /* Nuova regola per spostare Sakura.png in alto */
     }
 
     .home h1 {
