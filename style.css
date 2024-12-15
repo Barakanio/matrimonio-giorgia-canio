@@ -1259,7 +1259,7 @@ RESPONSIVENESS
 
 @media (max-width: 576px) {
     .home section.hero .img-top.img-left {
-        height: 65vw;
+        height: 55vw;
     }
 
     .home section.hero .img-top.img-right {
