@@ -1280,7 +1280,7 @@ RESPONSIVENESS
     }
 
     .hero-content {
-        margin-top: 50px; /* Sposta verso il basso di soli 50px per la versione mobile */
+        margin-top: 30px; /* Sposta verso il basso di soli 50px per la versione mobile */
     }
 
     .home h1 {
