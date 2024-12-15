@@ -1276,7 +1276,7 @@ RESPONSIVENESS
     }
 
      .home .date {
-        margin-top: 1rem; /* Avvicina la data al titolo */
+        margin-top: 1.2rem; /* Avvicina la data al titolo */
     }
 
     .home h1 {
