@@ -644,7 +644,7 @@ ANIMATIONS
 }
 
 .hero-content {
-    margin-top: 120px; /* Sposta tutto il blocco verso il basso */
+    /* margin-top: 120px; Sposta tutto il blocco verso il basso */
     text-align: center; /* Mantiene il contenuto centrato */
     position: relative; /* Necessario per controllare margini e spostamenti */
     -webkit-animation: focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
