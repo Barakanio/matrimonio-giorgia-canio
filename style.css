@@ -1275,6 +1275,10 @@ RESPONSIVENESS
         bottom: 80px; /* Nuova regola per spostare Sakura.png in alto */
     }
 
+     .home .date {
+        margin-top: 1rem; /* Avvicina la data al titolo */
+    }
+
     .home h1 {
         font-size: 2rem;
     }
