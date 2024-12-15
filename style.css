@@ -1279,6 +1279,10 @@ RESPONSIVENESS
         margin-top: 1.5rem; /* Avvicina la data al titolo */
     }
 
+    .hero-content {
+        margin-top: 50px; /* Sposta verso il basso di soli 50px per la versione mobile */
+    }
+
     .home h1 {
         font-size: 2rem;
     }
