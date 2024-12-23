@@ -119,11 +119,11 @@ section.hero .img-over {
 /* Specific style for Vulcanomare.png */
 .img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
     height: 40vh; /* Altezza standard */
-    max-height: 150px; /* Altezza massima */
+    /* max-height: 150px; /* Altezza massima */
     width: auto; /* Mantiene proporzioni */
     bottom: 0; /* Adeso al bordo inferiore */
     left: 0; /* Adeso al bordo sinistro */
-    margin: 10px; /* Spazio dai bordi */
+    margin: 0; /* Spazio dai bordi */
 }
 
 /***
