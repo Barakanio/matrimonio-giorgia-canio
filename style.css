@@ -241,7 +241,7 @@ p.subtext {
 }
 
 .location {
-    font-size: 3rem; /* Dimensione del testo */
+    font-size: 2.6rem; /* Dimensione del testo */
     font-weight: bold; /* Per enfatizzare la location */
     color: var(--green); /* Mantieni il colore in tema */
 }
