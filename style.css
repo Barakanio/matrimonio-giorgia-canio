@@ -240,6 +240,13 @@ p.subtext {
     margin: 0px;
 }
 
+.location {
+    font-size: 3rem; /* Dimensione del testo */
+    font-weight: bold; /* Per enfatizzare la location */
+    color: var(--green); /* Mantieni il colore in tema */
+}
+
+
 a:visited {
     color: var(--text);
 }
