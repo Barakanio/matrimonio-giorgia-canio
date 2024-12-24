@@ -1362,7 +1362,7 @@ a[href^="tel"]{
     }
 
     section#welcome.standard > div {
-        margin-top: -1rem;
+        margin-top: 0rem;
     }
 
     /* Riduce lo spazio sopra e sotto la barra orizzontale */
