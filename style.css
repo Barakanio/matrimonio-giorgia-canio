@@ -1353,26 +1353,3 @@ a[href^="tel"]{
     color:inherit;
     text-decoration:none;
 }
-
-/* Posizionamento specifico per welcome-bigtext */
-#welcome .welcome-bigtext {
-    margin-top: -2rem; /* Sposta il testo più in alto */
-    font-size: 4rem; /* Dimensione specifica */
-    position: relative; /* Garantisce il posizionamento corretto */
-    z-index: 2; /* Assicura che il testo sia sopra altri elementi */
-}
-
-/* Adattamenti per schermi piccoli */
-@media (max-width: 768px) {
-    #welcome .welcome-bigtext {
-        margin-top: -1rem; /* Riduce lo spostamento per tablet */
-        font-size: 3rem; /* Ridimensiona il testo */
-    }
-}
-
-@media (max-width: 576px) {
-    #welcome .welcome-bigtext {
-        margin-top: 0; /* Nessuno spostamento su schermi molto piccoli */
-        font-size: 2rem; /* Testo più piccolo per smartphone */
-    }
-}
