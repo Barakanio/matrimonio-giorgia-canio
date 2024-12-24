@@ -1354,49 +1354,20 @@ a[href^="tel"]{
 }
 
 @media (min-width: 992px) {
-    /* Sezione #welcome */
     #welcome {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90vh; /* Mantiene l'altezza minima */
-        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 100vh; /* Assicura che la sezione occupi l'altezza della finestra */
+        padding: 0; /* Rimuove il padding */
     }
 
-    /* Contenitore del testo */
-    #welcome > div {
-        height: 50%;
+    #welcome div {
+        height: 50%; /* Occupa la prima metà della sezione */
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 1rem;
-        max-width: 800px; /* Limita la larghezza per una migliore leggibilità */
-    }
-
-    /* Testo principale */
-    #welcome .bigtext {
-        font-size: clamp(1.5rem, 2.5vw, 3rem);
-        line-height: 1.2;
-        margin: 0;
-    }
-
-    /* Location */
-    #welcome .location {
-        font-size: clamp(1rem, 2vw, 2rem);
-        margin: 0.5rem 0 0;
-    }
-
-    /* Rimuovi margini e padding dai paragrafi nella sezione #welcome */
-    #welcome p {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Immagine Vulcanomare */
-    #welcome .img-over.img-bottom.img-left {
-        height: auto; /* Altezza automatica per mantenere le proporzioni */
-        width: 50%; /* Occupare il 50% della larghezza della sezione */
-        max-width: 500px; /* Limita la larghezza per evitare eccessi */
+        justify-content: center; /* Centra il contenuto verticalmente */
+        padding: 0; /* Assicura che non ci siano spazi interni */
     }
 }
-
