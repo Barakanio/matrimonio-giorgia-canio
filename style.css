@@ -1359,16 +1359,34 @@ a[href^="tel"]{
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        min-height: 100vh; /* Altezza minima adattabile */
-        padding: 0; /* Rimuove eventuali spazi */
+        min-height: 100vh; /* La sezione occupa l'intero viewport */
+        padding: 0;
     }
 
     #welcome div {
-        flex: 1 1 50%; /* Assicura il 50% di altezza dinamica */
+        height: 50%; /* Occupa metà altezza della sezione */
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Centra il testo */
-        padding: 0; /* Rimuove spazi interni */
-        overflow: hidden; /* Evita il traboccamento */
+        justify-content: center; /* Centra verticalmente i contenuti */
+        padding: 0;
+    }
+
+    #welcome div p {
+        margin: 0; /* Rimuove margini */
+        text-align: center; /* Centra il testo */
+    }
+
+    #welcome div {
+        font-size: calc(1vw + 1vh); /* Font-size dinamico in base al viewport */
+        line-height: 1.2; /* Mantiene leggibilità */
+    }
+
+    #welcome .bigtext {
+        flex: 1; /* Adatta l'altezza del paragrafo */
+    }
+
+    #welcome .location,
+    #welcome .details {
+        flex: 0.5; /* Adatta le altre righe */
     }
 }
