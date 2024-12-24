@@ -1356,6 +1356,6 @@ a[href^="tel"]{
 
 @media (min-width: 992px) {
     section#welcome {
-        padding-top: -1rem; /* Modifica questo valore secondo le tue esigenze */
+        padding-top: 0rem; /* Modifica questo valore secondo le tue esigenze */
     }
 }
