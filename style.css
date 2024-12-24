@@ -1176,6 +1176,8 @@ ANIMATIONS
 /***
 RESPONSIVENESS
 ***/
+
+
 @media (max-width: 1200px) {
     .home h1 {
         font-size: 4rem;
@@ -1368,4 +1370,20 @@ RESPONSIVENESS
 a[href^="tel"]{
     color:inherit;
     text-decoration:none;
+}
+
+/***
+ALL OTHER UGLY STUFF
+***/
+
+#welcome {
+    display: flex; /* Mantiene il layout flex */
+    flex-direction: column; /* Imposta l'orientamento verticale */
+    align-items: center; /* Mantiene il contenuto centrato orizzontalmente */
+    justify-content: flex-start; /* Sposta il contenuto verso l'alto */
+    position: relative; /* Garantisce che gli offset siano calcolati correttamente */
+}
+
+#welcome > div {
+    margin-top: 1vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
 }
