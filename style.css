@@ -1356,17 +1356,13 @@ a[href^="tel"]{
 
 @media (min-width: 992px) {
     section#welcome.standard {
-        display: flex; /* Attiva Flexbox */
-        flex-direction: row; /* Disporre gli elementi in una riga */
-        align-items: flex-start; /* Allinea gli elementi all'inizio verticalmente */
-        justify-content: space-between; /* Distribuisci lo spazio tra gli elementi */
+        justify-content: flex-start;
         padding-top: 0rem; /* Mantieni 0rem */
-        padding-bottom: 6rem; /* Mantieni il padding inferiore */
+        padding-bottom: 6rem;
     }
 
     section#welcome.standard > div {
         margin-top: 0rem;
-        max-width: 60%; /* Limita la larghezza del testo */
     }
 
     /* Riduce lo spazio sopra e sotto la barra orizzontale */
@@ -1380,11 +1376,10 @@ a[href^="tel"]{
         margin-top: 1rem; /* Aggiungi un margine superiore */
     }
 
-    /* Configura l'immagine per la versione desktop */
+    /* Posiziona l'immagine sotto il testo */
     section#welcome.standard img.img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
-        position: static; /* Rimuovi la posizione assoluta */
-        width: 35%; /* Imposta una larghezza appropriata */
-        height: auto; /* Mantieni le proporzioni dell'immagine */
-        margin-left: 2rem; /* Aggiungi uno spazio tra testo e immagine */
+        position: static; /* Rimuove la posizione assoluta */
+        width: 100%; /* Regola la larghezza secondo necessità */
+        margin-top: 1rem; /* Aggiunge spazio tra il testo e l'immagine */
     }
 }
