@@ -216,6 +216,7 @@ p.bigtext {
     padding: 0px; /* Eredita il padding */
     margin: 0 auto; /* Centra il blocco */
     text-align: center; /* Allinea il testo al centro */
+    white-space: nowrap;
 }
 
 p.hugetext {
