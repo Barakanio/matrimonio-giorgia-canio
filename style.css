@@ -1378,15 +1378,5 @@ a[href^="tel"]{
     section#welcome.standard .location {
         margin-top: 1rem;
     }
-
-    /* Configura l'immagine Vulcanomare.png */
-    section#welcome.standard img.img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 }
 
