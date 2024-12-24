@@ -1359,15 +1359,16 @@ a[href^="tel"]{
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        height: 100vh; /* Assicura che la sezione occupi l'altezza della finestra */
-        padding: 0; /* Rimuove il padding */
+        min-height: 100vh; /* Altezza minima adattabile */
+        padding: 0; /* Rimuove eventuali spazi */
     }
 
     #welcome div {
-        height: 50%; /* Occupa la prima metà della sezione */
+        flex: 1 1 50%; /* Assicura il 50% di altezza dinamica */
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Centra il contenuto verticalmente */
-        padding: 0; /* Assicura che non ci siano spazi interni */
+        justify-content: center; /* Centra il testo */
+        padding: 0; /* Rimuove spazi interni */
+        overflow: hidden; /* Evita il traboccamento */
     }
 }
