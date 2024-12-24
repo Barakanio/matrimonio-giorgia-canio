@@ -81,7 +81,8 @@ section.hero {
 
 /* Non-hero sections */
 section.standard {
-    padding: 12rem;
+    /* padding: 12rem; */
+    height: 100vh;
     z-index: 2;
     background-color: white;
 }
@@ -1385,5 +1386,5 @@ ALL OTHER UGLY STUFF
 }
 
 #welcome > div {
-    margin-top: 1vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
+    margin-top: 3vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
 }
