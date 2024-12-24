@@ -117,14 +117,13 @@ section.hero .img-over {
 }
 
 /* Specific style for Vulcanomare.png */
-/*.img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
+.img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
     height: auto; /* Altezza standard */
-    /* max-height: 150px; /* Altezza massima */
-    /* width: 100%; /* Mantiene proporzioni */
-    /*bottom: 0; /* Adeso al bordo inferiore */
-    /*left: 0; /* Adeso al bordo sinistro */
-    /*margin: 0; /* Spazio dai bordi */
-/* } */
+    width: 100%; /* Mantiene proporzioni */
+    bottom: 0; /* Adeso al bordo inferiore */
+    left: 0; /* Adeso al bordo sinistro */
+    margin: 0; /* Spazio dai bordi */
+ } 
 
 /***
 HOME
@@ -1386,7 +1385,7 @@ a[href^="tel"]{
         width: 100%;
         height: auto;
         margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 0;
         margin-bottom: 0;
     }
 }
