@@ -207,6 +207,17 @@ p.bigtext {
     margin: 0px;
 }
 
+/* Nuova classe basata su bigtext */
+.adaptive-bigtext {
+    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
+    color: var(--text); /* Usa il colore della variabile predefinita */
+    font-weight: 400; /* Mantiene lo stile del font */
+    font-size: calc(100vw/29);
+    padding: 0px; /* Eredita il padding */
+    margin: 0 auto; /* Centra il blocco */
+    text-align: center; /* Allinea il testo al centro */
+}
+
 p.hugetext {
     font-size: 5rem;
     padding: 0px;
@@ -1204,6 +1215,11 @@ RESPONSIVENESS
     section.standard {
         padding: 8rem;
     }
+
+    .adaptive-text {
+        width: 80%; /* Limita la larghezza all'80% dello schermo */
+        font-size: calc(2vw + 1rem); /* Rende la dimensione adattiva */
+    }
 }
 
 @media (max-width: 768px) {
@@ -1351,40 +1367,4 @@ RESPONSIVENESS
 a[href^="tel"]{
     color:inherit;
     text-decoration:none;
-}
-
-@media (min-width: 992px) {
-    #welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        height: 100vh; /* La sezione occupa l'altezza del viewport */
-        padding: 0; /* Rimuove padding */
-    }
-
-    #welcome div {
-        flex: 1 1 50%; /* Occupa metà della sezione */
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centra i contenuti */
-        align-items: center; /* Centra i contenuti orizzontalmente */
-        text-align: center;
-        padding: 0;
-    }
-
-    #welcome div p {
-        margin: 0;
-        font-size: 4vw; /* Font dinamico basato sulla larghezza del viewport */
-        line-height: 1.2; /* Mantiene leggibilità */
-    }
-
-    #welcome .bigtext {
-        font-size: 5vw; /* Font ancora più grande per il testo principale */
-    }
-
-    #welcome .location,
-    #welcome .details {
-        font-size: 2.5vw; /* Font dinamico per testo secondario */
-    }
 }
