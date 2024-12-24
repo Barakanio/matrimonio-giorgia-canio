@@ -1357,11 +1357,22 @@ a[href^="tel"]{
 @media (min-width: 992px) {
     section#welcome.standard {
         justify-content: flex-start;
-        padding-top: 2rem;
+        padding-top: 0rem; /* Mantieni 0rem */
         padding-bottom: 6rem;
     }
 
     section#welcome.standard > div {
         margin-top: -2rem;
+    }
+
+    /* Riduce lo spazio sopra e sotto la barra orizzontale */
+    section#welcome.standard .divider.bottom {
+        margin-top: 1rem; /* Riduci da 5rem a 1rem */
+        margin-bottom: 1rem; /* Riduci da 2rem a 1rem */
+    }
+
+    /* Riduce lo spazio sopra la data */
+    section#welcome.standard .location {
+        margin-top: 1rem; /* Aggiungi un margine superiore */
     }
 }
