@@ -1483,3 +1483,43 @@ ALL OTHER UGLY STUFF
     transform: translateX(-50%);
     z-index: 10;               /* numero più alto di quello dell’immagine */
 }
+
+
+/* Rende l’intera sezione #rsvpsec un contenitore flex,
+   e centra orizzontalmente + verticalmente il suo contenuto */
+   #rsvpsec {
+    display: flex;              /* container flex */
+    flex-direction: column;     /* disposizione verticale */
+    align-items: center;        /* centrato orizzontalmente */
+    justify-content: center;    /* centrato verticalmente */
+    position: relative;         /* ci serve per la freccia absolute */
+    height: 100vh;              /* occupa tutta l’altezza viewport */
+    text-align: center;         /* testo centrato */
+}
+
+/* L’elemento <div> interno ha già display: flex (ereditato dalle regole globali)
+   ma se serve puoi “normalizzarlo” così */
+#rsvpsec > div {
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;  
+    margin: 0;        /* Evita margini verticali eccessivi */
+    padding: 0;
+}
+
+/* Se vuoi ridurre la distanza dell'immagine o gestirne la larghezza max: */
+#rsvpsec img.img-remark.remark-top {
+    margin-bottom: 2rem;   /* esempio di margine */
+    max-width: 50vw;       /* così non sborda su schermi più piccoli */
+    height: auto; 
+}
+
+/* La freccia la mantieni in basso centrata */
+#rsvpsec .arrow-bounce {
+    position: absolute;
+    bottom: 2rem;                /* distanza dal fondo */
+    left: 50%;                   /* centrata orizzontalmente */
+    transform: translateX(-50%); 
+    z-index: 10;
+}
