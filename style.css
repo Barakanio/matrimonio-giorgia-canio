@@ -1470,7 +1470,7 @@ ALL OTHER UGLY STUFF
 /* 4) Adattare la dimensione del testo dinamicamente */
 /* Se vuoi un approccio simile a 'adaptive-bigtext', puoi usare un calc o una media query */
 #organizzazione .organizzazione-text p.bigtext {
-    font-size: calc(100vw /25) /* calc(1.8rem + 1vw);  /* Esempio: si adatta in base alla larghezza viewport */
+    font-size: calc(1.8rem + 2vw);  /* Esempio: si adatta in base alla larghezza viewport */
     line-height: 1.2;
     margin: 0;
     padding: 0;
