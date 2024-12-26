@@ -1444,7 +1444,7 @@ ALL OTHER UGLY STUFF
     align-items: center;      /* Centra verticalmente */
     justify-content: flex-start; /* L’immagine sta a sinistra, il testo a destra */
     height: 100vh;            /* Occupa interamente la viewport (o come preferisci) */
-    overflow: hidden;         /* Per sicurezza, in caso di animazioni */
+    /* overflow: hidden;         /* Per sicurezza, in caso di animazioni */
 }
 
 /* 2) Stile per l'immagine dell’ulivo a sinistra */
@@ -1474,4 +1474,12 @@ ALL OTHER UGLY STUFF
     line-height: 1.2;
     margin: 0;
     padding: 0;
+}
+
+#organizzazione .arrow-bounce {
+    position: absolute;         /* la classe arrow-bounce è già absolute, ma ribadiamolo */
+    bottom: 2rem;              /* o la distanza che preferisci dal fondo */
+    left: 50%;                 /* centrata orizzontalmente */
+    transform: translateX(-50%);
+    z-index: 10;               /* numero più alto di quello dell’immagine */
 }
