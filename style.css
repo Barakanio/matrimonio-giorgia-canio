@@ -208,7 +208,7 @@ p.bigtext {
     margin: 0px;
 }
 
-/* Nuova classe basata su bigtext */
+/* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext {
     font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
     color: var(--text); /* Usa il colore della variabile predefinita */
@@ -218,6 +218,28 @@ p.bigtext {
     margin: 0 auto; /* Centra il blocco */
     text-align: center; /* Allinea il testo al centro */
     white-space: nowrap;
+}
+
+/* Nuova classe adattiva basata su text */
+.adaptive-text {
+    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
+    color: var(--text); /* Usa il colore della variabile predefinita */
+    font-weight: 400; /* Mantiene lo stile del font */
+    font-size: calc(100vw/50);
+    padding: 0px; /* Eredita il padding */
+    margin: 0 auto; /* Centra il blocco */
+    text-align: center; /* Allinea il testo al centro */
+    white-space: nowrap;
+}
+
+p.adaptive-text a {
+    color: var(--text);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+p.adaptive-text a:hover {
+    color: var(--red);
 }
 
 p.hugetext {
@@ -238,12 +260,12 @@ div.divider {
 
 div.divider.top {
     margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
 div.divider.bottom {
-    margin-bottom: 0rem; /* Spazio interno */
-    margin-top: 1.5rem;
+    margin-bottom: -1rem; /* Spazio interno */
+    margin-top: 1rem;
 }
 
 
@@ -262,6 +284,26 @@ p.subtext {
 a:visited {
     color: var(--text);
 }
+
+p.details {
+    margin-top: -8px; /* Riduci lo spazio sopra */
+}
+
+p.details a,
+p.details a:visited,
+p.details a:any-link {
+    font-size: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    border-bottom: solid 1px var(--light-green);
+    color: var(--light-green);
+    transition: all 1s ease-in-out;
+}
+
+p.details a:hover {
+    color: var(--red);
+}
+
 
 p.details a,
 p.details a:visited,
@@ -284,7 +326,8 @@ p.details a:hover,
 
 section.alt {
     background-color: var(--beige);
-    padding: 12rem 10em;
+    /* padding: 12rem 10em; */
+    height: 100vh;
 }
 
 .video iframe {
@@ -374,7 +417,7 @@ p.subtext a:hover {
   } */
 
 img.img-remark {
-    width: 40vw;
+    width: 30vw;
 }
 
 img.remark-top {
@@ -1387,4 +1430,48 @@ ALL OTHER UGLY STUFF
 
 #welcome > div {
     margin-top: 3vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
+}
+
+#rsvpsec p.adaptive-bigtext {
+    margin-bottom: 3%;
+}
+
+/* 1) Layout di base per #organizzazione */
+#organizzazione {
+    position: relative;        /* Mantiene la posizione per la freccia */
+    display: flex;            /* Layout flex orizzontale */
+    flex-direction: row;      /* Immagine e testo affiancati */
+    align-items: center;      /* Centra verticalmente */
+    justify-content: flex-start; /* L’immagine sta a sinistra, il testo a destra */
+    height: 100vh;            /* Occupa interamente la viewport (o come preferisci) */
+    overflow: hidden;         /* Per sicurezza, in caso di animazioni */
+}
+
+/* 2) Stile per l'immagine dell’ulivo a sinistra */
+#organizzazione img.ulivo {
+    height: 100%;       /* Occupa 100% dell’altezza della sezione */
+    width: auto;        /* Mantiene proporzioni in larghezza */
+    flex-shrink: 0;     /* Impedisce all’immagine di ridursi troppo se lo spazio è poco */
+    object-fit: cover;  /* Taglia eventuali eccedenze se serve */
+    /* Se vuoi dare una larghezza massima: max-width: 200px, ecc. */
+}
+
+/* 3) Contenitore del testo a destra */
+#organizzazione .organizzazione-text {
+    flex: 1;                        /* Prende tutto lo spazio rimanente */
+    display: flex;                  /* Centro verticale/orizzontale */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;                  /* Un po’ di padding se serve */
+    box-sizing: border-box;
+}
+
+/* 4) Adattare la dimensione del testo dinamicamente */
+/* Se vuoi un approccio simile a 'adaptive-bigtext', puoi usare un calc o una media query */
+#organizzazione .organizzazione-text p.bigtext {
+    font-size: calc(100vw /25) /* calc(1.8rem + 1vw);  /* Esempio: si adatta in base alla larghezza viewport */
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
 }
