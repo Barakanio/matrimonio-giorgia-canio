@@ -220,6 +220,17 @@ p.bigtext {
     white-space: nowrap;
 }
 
+/* Nuova classe adattiva basata su bigtext */
+.adaptive-bigtext-wrap {
+    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
+    color: var(--text); /* Usa il colore della variabile predefinita */
+    font-weight: 400; /* Mantiene lo stile del font */
+    font-size: calc(100vw/29);
+    padding: 0px; /* Eredita il padding */
+    margin: 0 auto; /* Centra il blocco */
+    text-align: center; /* Allinea il testo al centro */
+}
+
 /* Nuova classe adattiva basata su text */
 .adaptive-text {
     font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
@@ -1432,7 +1443,7 @@ ALL OTHER UGLY STUFF
     margin-top: 3vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
 }
 
-#rsvpsec p.adaptive-bigtext {
+#rsvp p.adaptive-bigtext {
     margin-bottom: 3%;
 }
 
@@ -1585,4 +1596,9 @@ ALL OTHER UGLY STUFF
     #lunadimiele .lunadimiele-text p.bigtext {
         font-size: calc(1.5rem + 2vw);
     }
+}
+
+.spacer {
+    height: 5vh;
+    width: 100%;
 }
