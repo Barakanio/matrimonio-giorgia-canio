@@ -1523,3 +1523,66 @@ ALL OTHER UGLY STUFF
     transform: translateX(-50%); 
     z-index: 10;
 }
+
+/* Layout di base per #lunadimiele */
+#lunadimiele {
+    position: relative;        
+    display: flex;            
+    flex-direction: row;      
+    align-items: center;      
+    justify-content: flex-start;
+    height: 100vh;            
+}
+
+/* Stile per l'immagine della lapa a destra */
+#lunadimiele img.lapa-right {
+    height: 100%;       
+    width: auto;        
+    flex-shrink: 0;     
+    object-fit: cover;  
+    order: 2;          /* Sposta l'immagine alla fine del container flex */
+}
+
+/* Contenitore del testo a sinistra */
+#lunadimiele .lunadimiele-text {
+    flex: 1;                        
+    display: flex;                  
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;                  
+    box-sizing: border-box;
+    order: 1;          /* Sposta il testo all'inizio del container flex */
+}
+
+/* Adattamento dimensione testo */
+#lunadimiele .lunadimiele-text p.bigtext {
+    font-size: calc(1.8rem + 2vw);  
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+#lunadimiele .arrow-bounce {
+    position: absolute;         
+    bottom: 2rem;              
+    left: 50%;                 
+    transform: translateX(-50%);
+    z-index: 10;               
+}
+
+/* Responsiveness per schermi più piccoli */
+@media (max-width: 768px) {
+    #lunadimiele {
+        flex-direction: column;
+    }
+    
+    #lunadimiele img.lapa-right {
+        height: auto;
+        width: 100%;
+    }
+    
+    #lunadimiele .lunadimiele-text p.bigtext {
+        font-size: calc(1.5rem + 2vw);
+    }
+}
