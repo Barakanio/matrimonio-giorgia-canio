@@ -135,7 +135,7 @@ HOME
     font-family: 'Amalfi-Coast';
     text-align: center;
     line-height: 1.05em;
-    font-size: 5rem;
+    font-size: calc(1.5rem + 4vw);
     letter-spacing: .5px;
     color: var(--green);
 }
@@ -154,14 +154,14 @@ HOME
 }
 
 .home .hero .img-bottom.img-right {
-    height: 45vh;
+    height: 40vh;
 }
 
 /* Sets the wedding date below the h1 */
 .home .date {
     color: var(--green);
-    font-size: 2.2rem;
-    margin-top: 5.5rem;
+    font-size: calc(1.5rem + 1.5vw);
+    margin-top: 12vh;
 }
 
 /***
@@ -237,6 +237,18 @@ p.bigtext {
     color: var(--text); /* Usa il colore della variabile predefinita */
     font-weight: 400; /* Mantiene lo stile del font */
     font-size: calc(100vw/50);
+    padding: 0px; /* Eredita il padding */
+    margin: 0 auto; /* Centra il blocco */
+    text-align: center; /* Allinea il testo al centro */
+    white-space: nowrap;
+}
+
+/* Nuova classe adattiva basata su text */
+.adaptive-medtext {
+    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
+    color: var(--text); /* Usa il colore della variabile predefinita */
+    font-weight: 400; /* Mantiene lo stile del font */
+    font-size: calc(100vw/45);
     padding: 0px; /* Eredita il padding */
     margin: 0 auto; /* Centra il blocco */
     text-align: center; /* Allinea il testo al centro */
@@ -681,7 +693,7 @@ justify-content: space-between;
     margin-bottom: 4rem
 }
 
-.honeymoon span.iban {
+/* .honeymoon span.iban {
     display: block;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -691,7 +703,7 @@ justify-content: space-between;
     display: block;
 font-size: 1.5rem;
 }
-
+ */
 
 /***
 TEXT HIGHLIGHT
@@ -1338,12 +1350,12 @@ RESPONSIVENESS
         display: none;
     }
 
-    .honeymoon span.iban {
+/*     .honeymoon span.iban {
         font-size: 1.5rem;
     }
     .honeymoon span.iban_details {
         font-size: 1.2rem;
-    }
+    } */
 
 }
 
@@ -1601,4 +1613,66 @@ ALL OTHER UGLY STUFF
 .spacer {
     height: 5vh;
     width: 100%;
+}
+
+/***
+HONEYMOON
+***/
+
+.honeymoon-section {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;    /* Estende gli elementi per riempire l'altezza */
+    justify-content: space-between; /* Distribuisce gli elementi */
+    height: 100vh;           /* Imposta l'altezza della sezione */
+    padding: 0 5%;           /* Aggiunge spaziatura laterale */
+}
+
+.honeymoon-section .img-over {
+    position: static;         /* Rimuove position absolute */
+    height: 100%;             /* Occupa l'intera altezza della sezione */
+    width: auto;              /* Mantiene le proporzioni */
+    flex-shrink: 0;           /* Impedisce alla larghezza di ridursi */
+    object-fit: cover;        /* Assicura che l'immagine copra l'area senza deformazioni */
+}
+
+.honeymoon-text {
+    flex: 1;                   /* Occupa lo spazio rimanente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Centra orizzontalmente */
+    justify-content: center;   /* Centra verticalmente */
+    text-align: center;        /* Allinea il testo al centro */
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.honeymoon-text h1,
+.honeymoon-text p {
+    text-align: center; /* Garantisce la centratura del testo */
+}
+
+.honeymoon-text .iban {
+    display: block;
+    font-family: 'EB Garamond';
+    font-size: calc(1.5rem + 2.5vw);
+    margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
+    margin-bottom: 1rem;
+}
+
+.honeymoon-text .swift {
+    display: inline;
+    font-family: 'EB Garamond';
+    font-size: calc(1.5rem + 1.5vw);
+    margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
+    margin-bottom: 1rem;
+}
+
+.honeymoon-text .iban_details {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.swift-code {
+    display: inline; /* Mantiene "BIC/SWIFT:" in linea */
 }
