@@ -1658,7 +1658,7 @@ HONEYMOON
 .honeymoon-text .iban {
     display: block;
     font-family: 'EB Garamond';
-    font-size: calc(1.5rem + 2.5vw);
+    font-size: calc(1.5rem + 2.2vw);
     margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
     margin-bottom: 1rem;
 }
@@ -1666,7 +1666,7 @@ HONEYMOON
 .honeymoon-text .swift {
     display: inline;
     font-family: 'EB Garamond';
-    font-size: calc(1.5rem + 1.5vw);
+    font-size: calc(100wh/50);
     margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
     margin-bottom: 1rem;
 }
