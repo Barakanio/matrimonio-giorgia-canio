@@ -53,6 +53,10 @@ section {
     min-height: 90vh;
 }
 
+div {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /* Basic font settings  */
 h1,
 h2,
@@ -225,7 +229,7 @@ p.bigtext {
     font-size: calc(100vw/29);
     padding: 0px;
     /* Eredita il padding */
-    /*  margin: 0 auto; */
+    margin: 0 auto;
     /* Centra il blocco */
     text-align: center;
     /* Allinea il testo al centro */
@@ -329,7 +333,10 @@ p.subtext {
 }
 
 .location {
-    font-size: calc(100vw/50);
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid var(--green);
+    font-size: 40px;
     /* Dimensione del testo */
     font-weight: bold;
     /* Per enfatizzare la location */
@@ -337,14 +344,28 @@ p.subtext {
     /* Mantieni il colore in tema */
 }
 
+#testa-di-cazzo-lui {
+    display: none;
+}
+
+#testa-di-cazzo-lei {
+    display: none;
+}
+
+#partecipazione-mobile {
+    display: none
+}
+
+#partecipazione-desktop {
+    display: block
+}
 
 a:visited {
     color: var(--text);
 }
 
-p.details {
-    margin-top: -8px;
-    /* Riduci lo spazio sopra */
+#partecipazione {
+    display: flex;
 }
 
 p.details a,
@@ -475,6 +496,15 @@ p.subtext a:hover {
 
 img.img-remark {
     width: 30vw;
+}
+
+.testa {
+    width: 40vw;
+}
+
+#testa-container {
+    height: 100%;
+    justify-content: center;
 }
 
 img.remark-top {
@@ -1288,6 +1318,7 @@ RESPONSIVENESS
     .home h1 {
         font-size: 4rem;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -1332,9 +1363,46 @@ RESPONSIVENESS
 }
 
 @media (max-width: 768px) {
-    .adaptive-bigtext {
+    #teste-di-cazzo {
+        display: none !important;
+    }
 
+    #testa-di-cazzo-lui {
+        display: block;
+    }
+
+    #testa-di-cazzo-lei {
+        display: block;
+    }
+    
+    #testa-container {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    #partecipazione-mobile {
+        display: flex;
+        padding:6vw;
+    }
+    
+    #partecipazione-desktop {
+        display: none
+    }
+
+    #welcome-text-container {
+        height: 40%;
+        padding: 0px 15vw;
+    }
+
+    .adaptive-bigtext {
         font-size: 30px !important;
+    }
+
+    #img-vulcano {
+        width: 400%;
+        position: absolute;
+        bottom: 0px;
+        left: -550px;
     }
 
     .ulivo {
@@ -1429,7 +1497,6 @@ RESPONSIVENESS
 
     .home section.hero .img-bottom.img-right {
         height: 50vw;
-        bottom: 80px;
         /* Nuova regola per spostare Ninfee.png in alto */
     }
 
@@ -1564,7 +1631,7 @@ ALL OTHER UGLY STUFF
     justify-content: center;
     text-align: center;
     padding: 0rem;
-    height:40%;
+    height: 40%;
     /* Un po’ di padding se serve */
     box-sizing: border-box;
 }
