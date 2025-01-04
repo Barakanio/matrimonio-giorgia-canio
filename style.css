@@ -226,7 +226,7 @@ p.bigtext {
     /* Usa il colore della variabile predefinita */
     font-weight: 400;
     /* Mantiene lo stile del font */
-    font-size: calc(100vw/29);
+    font-size: calc(100vw/39);
     padding: 0px;
     /* Eredita il padding */
     margin: 0 auto;
@@ -336,7 +336,7 @@ p.subtext {
     margin-top: 1em;
     padding-top: 1em;
     border-top: 1px solid var(--green);
-    font-size: 40px;
+    font-size: calc(100vw/39);
     /* Dimensione del testo */
     font-weight: bold;
     /* Per enfatizzare la location */
@@ -1309,6 +1309,10 @@ ANIMATIONS
     animation-duration: 4s;
 }
 
+#santa-venerina {
+    font-size: 25px;
+}
+
 /***
 RESPONSIVENESS
 ***/
@@ -1322,6 +1326,51 @@ RESPONSIVENESS
 }
 
 @media (max-width: 992px) {
+    .adaptive-bigtext {
+        font-size: 40px;
+    }
+
+    .welcome-text {
+        font-size: 40px !important
+    }
+
+    .location {
+        font-size: 30px !important;
+    }
+
+    #santa-venerina {
+        font-size: 30px;
+    }
+
+    .details>a {
+        font-size: 30px !important;
+    }
+
+    #teste-di-cazzo {
+        display: none !important;
+    }
+
+    #testa-di-cazzo-lui {
+        display: block;
+    }
+
+    #testa-di-cazzo-lei {
+        display: block;
+    }
+
+    #testa-container {
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    #img-vulcano {
+        width: 200%;
+        position: absolute;
+        bottom: -5vh;
+        left: -50vw;
+    }
+
+
     .home h1 {
         font-size: 2.5rem;
     }
@@ -1362,7 +1411,27 @@ RESPONSIVENESS
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 398px) {
+    .adaptive-bigtext {
+        font-size: 30px;
+    }
+
+    .welcome-text {
+        font-size: 30px !important
+    }
+
+    .location {
+        font-size: 20px !important;
+    }
+
+    #santa-venerina {
+        font-size: 20px;
+    }
+
+    .details>a {
+        font-size: 20px !important;
+    }
+
     #teste-di-cazzo {
         display: none !important;
     }
@@ -1382,26 +1451,25 @@ RESPONSIVENESS
 
     #partecipazione-mobile {
         display: flex;
+        font-size: 25px !important;
     }
-    
+
     #partecipazione-desktop {
-        display: none
+        display: none;
     }
 
     #welcome-text-container {
-        height: 40%;
+        height: 50%;
         padding: 0px 15vw;
     }
 
-    .adaptive-bigtext {
-        font-size: 20px !important;
-    }
+
 
     #img-vulcano {
         width: 400%;
         position: absolute;
-        bottom: 0px;
-        left: -550px;
+        bottom: -7vh;
+        left: -130vw;
     }
 
     .ulivo {
@@ -1510,7 +1578,7 @@ RESPONSIVENESS
     }
 
     .home h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .home .bounce {
