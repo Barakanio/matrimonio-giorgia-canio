@@ -499,7 +499,7 @@ img.img-remark {
 }
 
 .testa {
-    width: 40vw;
+    width: 35vw;
 }
 
 #testa-container {
@@ -1374,15 +1374,14 @@ RESPONSIVENESS
     #testa-di-cazzo-lei {
         display: block;
     }
-    
+
     #testa-container {
         height: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     #partecipazione-mobile {
         display: flex;
-        padding:6vw;
     }
     
     #partecipazione-desktop {
@@ -1395,7 +1394,7 @@ RESPONSIVENESS
     }
 
     .adaptive-bigtext {
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
 
     #img-vulcano {
