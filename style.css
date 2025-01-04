@@ -2,7 +2,7 @@
     --green: #5B7343;
     --light-green: #B1BF93;
     --yellow: #D6D989;
-    --yellow-down:#fbfdba;
+    --yellow-down: #fbfdba;
     --beige: #f6f2e9;
     --red: #A66565;
     --text: #5B7343;
@@ -67,8 +67,9 @@ h1 a,
 h1 a:visited {
     color: var(--text);
     display: inline-block;
-    transition:all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
 }
+
 h1 a:hover {
     color: var(--red);
 }
@@ -119,12 +120,17 @@ section.hero .img-over {
 
 /* Specific style for Vulcanomare.png */
 .img-over.img-bottom.img-left[src="assets/Vulcanomare.png"] {
-    height: auto; /* Altezza standard */
-    width: 100%; /* Mantiene proporzioni */
-    bottom: 0; /* Adeso al bordo inferiore */
-    left: 0; /* Adeso al bordo sinistro */
-    margin: 0; /* Spazio dai bordi */
- } 
+    height: auto;
+    /* Altezza standard */
+    width: 100%;
+    /* Mantiene proporzioni */
+    bottom: 0;
+    /* Adeso al bordo inferiore */
+    left: 0;
+    /* Adeso al bordo sinistro */
+    margin: 0;
+    /* Spazio dai bordi */
+}
 
 /***
 HOME
@@ -210,48 +216,72 @@ p.bigtext {
 
 /* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext {
-    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
-    color: var(--text); /* Usa il colore della variabile predefinita */
-    font-weight: 400; /* Mantiene lo stile del font */
+    font-family: 'Cormorant Garamond', serif;
+    /* Inherits font from bigtext */
+    color: var(--text);
+    /* Usa il colore della variabile predefinita */
+    font-weight: 400;
+    /* Mantiene lo stile del font */
     font-size: calc(100vw/29);
-    padding: 0px; /* Eredita il padding */
-    margin: 0 auto; /* Centra il blocco */
-    text-align: center; /* Allinea il testo al centro */
-    white-space: nowrap;
+    padding: 0px;
+    /* Eredita il padding */
+    /*  margin: 0 auto; */
+    /* Centra il blocco */
+    text-align: center;
+    /* Allinea il testo al centro */
+    /*white-space: nowrap;*/
 }
 
 /* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext-wrap {
-    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
-    color: var(--text); /* Usa il colore della variabile predefinita */
-    font-weight: 400; /* Mantiene lo stile del font */
+    font-family: 'Cormorant Garamond', serif;
+    /* Inherits font from bigtext */
+    color: var(--text);
+    /* Usa il colore della variabile predefinita */
+    font-weight: 400;
+    /* Mantiene lo stile del font */
     font-size: calc(100vw/29);
-    padding: 0px; /* Eredita il padding */
-    margin: 0 auto; /* Centra il blocco */
-    text-align: center; /* Allinea il testo al centro */
+    padding: 0px;
+    /* Eredita il padding */
+    margin: 0 auto;
+    /* Centra il blocco */
+    text-align: center;
+    /* Allinea il testo al centro */
 }
 
 /* Nuova classe adattiva basata su text */
 .adaptive-text {
-    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
-    color: var(--text); /* Usa il colore della variabile predefinita */
-    font-weight: 400; /* Mantiene lo stile del font */
+    font-family: 'Cormorant Garamond', serif;
+    /* Inherits font from bigtext */
+    color: var(--text);
+    /* Usa il colore della variabile predefinita */
+    font-weight: 400;
+    /* Mantiene lo stile del font */
     font-size: calc(100vw/50);
-    padding: 0px; /* Eredita il padding */
-    margin: 0 auto; /* Centra il blocco */
-    text-align: center; /* Allinea il testo al centro */
+    padding: 0px;
+    /* Eredita il padding */
+    margin: 0 auto;
+    /* Centra il blocco */
+    text-align: center;
+    /* Allinea il testo al centro */
     white-space: nowrap;
 }
 
 /* Nuova classe adattiva basata su text */
 .adaptive-medtext {
-    font-family: 'Cormorant Garamond', serif; /* Inherits font from bigtext */
-    color: var(--text); /* Usa il colore della variabile predefinita */
-    font-weight: 400; /* Mantiene lo stile del font */
+    font-family: 'Cormorant Garamond', serif;
+    /* Inherits font from bigtext */
+    color: var(--text);
+    /* Usa il colore della variabile predefinita */
+    font-weight: 400;
+    /* Mantiene lo stile del font */
     font-size: calc(100vw/45);
-    padding: 0px; /* Eredita il padding */
-    margin: 0 auto; /* Centra il blocco */
-    text-align: center; /* Allinea il testo al centro */
+    padding: 0px;
+    /* Eredita il padding */
+    margin: 0 auto;
+    /* Centra il blocco */
+    text-align: center;
+    /* Allinea il testo al centro */
     white-space: nowrap;
 }
 
@@ -287,7 +317,8 @@ div.divider.top {
 }
 
 div.divider.bottom {
-    margin-bottom: -1rem; /* Spazio interno */
+    margin-bottom: -1rem;
+    /* Spazio interno */
     margin-top: 1rem;
 }
 
@@ -298,9 +329,12 @@ p.subtext {
 }
 
 .location {
-    font-size: calc(100vw/50); /* Dimensione del testo */
-    font-weight: bold; /* Per enfatizzare la location */
-    color: var(--green); /* Mantieni il colore in tema */
+    font-size: calc(100vw/50);
+    /* Dimensione del testo */
+    font-weight: bold;
+    /* Per enfatizzare la location */
+    color: var(--green);
+    /* Mantieni il colore in tema */
 }
 
 
@@ -309,7 +343,8 @@ a:visited {
 }
 
 p.details {
-    margin-top: -8px; /* Riduci lo spazio sopra */
+    margin-top: -8px;
+    /* Riduci lo spazio sopra */
 }
 
 p.details a,
@@ -387,8 +422,7 @@ section.video img.img-bottom.img-right {
 }
 
 p.bigtext a,
-p.hugetext a
- {
+p.hugetext a {
     font-weight: bolder;
     font-style: italic;
     display: inline-block;
@@ -687,8 +721,8 @@ HONEYMOON
 }
 
 .honeymoon div.navigation {
-width:50vw;
-justify-content: space-between;
+    width: 50vw;
+    justify-content: space-between;
 }
 
 .honeymoon h1 {
@@ -741,9 +775,12 @@ ANIMATIONS
 }
 
 .hero-content {
-    margin-top: 110px; /* Sposta tutto il blocco verso il basso */
-    text-align: center; /* Mantiene il contenuto centrato */
-    position: relative; /* Necessario per controllare margini e spostamenti */
+    margin-top: 110px;
+    /* Sposta tutto il blocco verso il basso */
+    text-align: center;
+    /* Mantiene il contenuto centrato */
+    position: relative;
+    /* Necessario per controllare margini e spostamenti */
     -webkit-animation: focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
     animation: focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
 }
@@ -1284,17 +1321,35 @@ RESPONSIVENESS
         height: 506px;
     }
 
-    section.standard {
-        padding: 8rem;
-    }
+
 
     .adaptive-text {
-        width: 80%; /* Limita la larghezza all'80% dello schermo */
-        font-size: calc(2vw + 1rem); /* Rende la dimensione adattiva */
+        width: 80%;
+        /* Limita la larghezza all'80% dello schermo */
+        font-size: calc(2vw + 1rem);
+        /* Rende la dimensione adattiva */
     }
 }
 
 @media (max-width: 768px) {
+    .adaptive-bigtext {
+
+        font-size: 30px !important;
+    }
+
+    .ulivo {
+        height: 60% !important;
+        position: absolute;
+        bottom: 0px
+    }
+
+    #header-ulivo {
+        margin-top: 50px
+    }
+
+    #organizzazione {
+        align-items: flex-start !important;
+    }
 
     h1,
     p.bigtext,
@@ -1311,9 +1366,6 @@ RESPONSIVENESS
         width: auto;
     }
 
-    section.standard {
-        padding: 5rem;
-    }
 
     section.video img.img-top.img-left {
         height: 40vw;
@@ -1348,11 +1400,12 @@ RESPONSIVENESS
         padding: 0rem;
         width: 100%;
     }
+
     .logo div.test {
         display: none;
     }
 
-/*     .honeymoon span.iban {
+    /*     .honeymoon span.iban {
         font-size: 1.5rem;
     }
     .honeymoon span.iban_details {
@@ -1376,15 +1429,18 @@ RESPONSIVENESS
 
     .home section.hero .img-bottom.img-right {
         height: 50vw;
-        bottom: 80px; /* Nuova regola per spostare Ninfee.png in alto */
+        bottom: 80px;
+        /* Nuova regola per spostare Ninfee.png in alto */
     }
 
-     .home .date {
-        margin-top: 1.5rem; /* Avvicina la data al titolo */
+    .home .date {
+        margin-top: 1.5rem;
+        /* Avvicina la data al titolo */
     }
 
     .hero-content {
-        margin-top: 30px; /* Sposta verso il basso di soli 50px per la versione mobile */
+        margin-top: 30px;
+        /* Sposta verso il basso di soli 50px per la versione mobile */
     }
 
     .home h1 {
@@ -1431,14 +1487,15 @@ RESPONSIVENESS
     .home section.gift .img-bottom.img-left {
         height: 0vw;
     }
+
     .home section.gift .img-bottom.img-right {
         height: 70vw;
     }
 }
 
-a[href^="tel"]{
-    color:inherit;
-    text-decoration:none;
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
 }
 
 /***
@@ -1446,15 +1503,21 @@ ALL OTHER UGLY STUFF
 ***/
 
 #welcome {
-    display: flex; /* Mantiene il layout flex */
-    flex-direction: column; /* Imposta l'orientamento verticale */
-    align-items: center; /* Mantiene il contenuto centrato orizzontalmente */
-    justify-content: flex-start; /* Sposta il contenuto verso l'alto */
-    position: relative; /* Garantisce che gli offset siano calcolati correttamente */
+    display: flex;
+    /* Mantiene il layout flex */
+    flex-direction: column;
+    /* Imposta l'orientamento verticale */
+    align-items: center;
+    /* Mantiene il contenuto centrato orizzontalmente */
+    justify-content: flex-start;
+    /* Sposta il contenuto verso l'alto */
+    position: relative;
+    /* Garantisce che gli offset siano calcolati correttamente */
 }
 
-#welcome > div {
-    margin-top: 3vh; /* Sposta il contenuto del 20% dall'inizio della sezione */
+#welcome>div {
+    margin-top: 3vh;
+    /* Sposta il contenuto del 20% dall'inizio della sezione */
 }
 
 #rsvp p.adaptive-bigtext {
@@ -1463,137 +1526,170 @@ ALL OTHER UGLY STUFF
 
 /* 1) Layout di base per #organizzazione */
 #organizzazione {
-    position: relative;        /* Mantiene la posizione per la freccia */
-    display: flex;            /* Layout flex orizzontale */
-    flex-direction: row;      /* Immagine e testo affiancati */
-    align-items: center;      /* Centra verticalmente */
-    justify-content: flex-start; /* L’immagine sta a sinistra, il testo a destra */
-    height: 100vh;            /* Occupa interamente la viewport (o come preferisci) */
+    position: relative;
+    /* Mantiene la posizione per la freccia */
+    display: flex;
+    /* Layout flex orizzontale */
+    flex-direction: row;
+    /* Immagine e testo affiancati */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: flex-start;
+    /* L’immagine sta a sinistra, il testo a destra */
+    height: 100vh;
+    /* Occupa interamente la viewport (o come preferisci) */
     /* overflow: hidden;         /* Per sicurezza, in caso di animazioni */
 }
 
 /* 2) Stile per l'immagine dell’ulivo a sinistra */
 #organizzazione img.ulivo {
-    height: 100%;       /* Occupa 100% dell’altezza della sezione */
-    width: auto;        /* Mantiene proporzioni in larghezza */
-    flex-shrink: 0;     /* Impedisce all’immagine di ridursi troppo se lo spazio è poco */
-    object-fit: cover;  /* Taglia eventuali eccedenze se serve */
+    height: 100%;
+    /* Occupa 100% dell’altezza della sezione */
+    width: auto;
+    /* Mantiene proporzioni in larghezza */
+    flex-shrink: 0;
+    /* Impedisce all’immagine di ridursi troppo se lo spazio è poco */
+    object-fit: cover;
+    /* Taglia eventuali eccedenze se serve */
     /* Se vuoi dare una larghezza massima: max-width: 200px, ecc. */
 }
 
 /* 3) Contenitore del testo a destra */
 #organizzazione .organizzazione-text {
-    flex: 1;                        /* Prende tutto lo spazio rimanente */
-    display: flex;                  /* Centro verticale/orizzontale */
+    flex: 1;
+    /* Prende tutto lo spazio rimanente */
+    display: flex;
+    /* Centro verticale/orizzontale */
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0rem;                  /* Un po’ di padding se serve */
+    padding: 0rem;
+    height:40%;
+    /* Un po’ di padding se serve */
     box-sizing: border-box;
 }
 
 /* 4) Adattare la dimensione del testo dinamicamente */
 /* Se vuoi un approccio simile a 'adaptive-bigtext', puoi usare un calc o una media query */
 #organizzazione .organizzazione-text p.bigtext {
-    font-size: calc(1.8rem + 2vw);  /* Esempio: si adatta in base alla larghezza viewport */
+    font-size: calc(1.8rem + 2vw);
+    /* Esempio: si adatta in base alla larghezza viewport */
     line-height: 1.2;
     margin: 0;
     padding: 0;
 }
 
 #organizzazione .arrow-bounce {
-    position: absolute;         /* la classe arrow-bounce è già absolute, ma ribadiamolo */
-    bottom: 2rem;              /* o la distanza che preferisci dal fondo */
-    left: 50%;                 /* centrata orizzontalmente */
+    position: absolute;
+    /* la classe arrow-bounce è già absolute, ma ribadiamolo */
+    bottom: 2rem;
+    /* o la distanza che preferisci dal fondo */
+    left: 50%;
+    /* centrata orizzontalmente */
     transform: translateX(-50%);
-    z-index: 10;               /* numero più alto di quello dell’immagine */
+    z-index: 10;
+    /* numero più alto di quello dell’immagine */
 }
 
 
 /* Rende l’intera sezione #rsvpsec un contenitore flex,
    e centra orizzontalmente + verticalmente il suo contenuto */
-   #rsvpsec {
-    display: flex;              /* container flex */
-    flex-direction: column;     /* disposizione verticale */
-    align-items: center;        /* centrato orizzontalmente */
-    justify-content: center;    /* centrato verticalmente */
-    position: relative;         /* ci serve per la freccia absolute */
-    height: 100vh;              /* occupa tutta l’altezza viewport */
-    text-align: center;         /* testo centrato */
+#rsvpsec {
+    display: flex;
+    /* container flex */
+    flex-direction: column;
+    /* disposizione verticale */
+    align-items: center;
+    /* centrato orizzontalmente */
+    justify-content: center;
+    /* centrato verticalmente */
+    position: relative;
+    /* ci serve per la freccia absolute */
+    height: 100vh;
+    /* occupa tutta l’altezza viewport */
+    text-align: center;
+    /* testo centrato */
 }
 
 /* L’elemento <div> interno ha già display: flex (ereditato dalle regole globali)
    ma se serve puoi “normalizzarlo” così */
-#rsvpsec > div {
-    display: flex;  
-    flex-direction: column; 
-    align-items: center;  
-    justify-content: center;  
-    margin: 0;        /* Evita margini verticali eccessivi */
+#rsvpsec>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* Evita margini verticali eccessivi */
     padding: 0;
 }
 
 /* Se vuoi ridurre la distanza dell'immagine o gestirne la larghezza max: */
 #rsvpsec img.img-remark.remark-top {
-    margin-bottom: 2rem;   /* esempio di margine */
-    max-width: 50vw;       /* così non sborda su schermi più piccoli */
-    height: auto; 
+    margin-bottom: 2rem;
+    /* esempio di margine */
+    max-width: 50vw;
+    /* così non sborda su schermi più piccoli */
+    height: auto;
 }
 
 /* La freccia la mantieni in basso centrata */
 #rsvpsec .arrow-bounce {
     position: absolute;
-    bottom: 2rem;                /* distanza dal fondo */
-    left: 50%;                   /* centrata orizzontalmente */
-    transform: translateX(-50%); 
+    bottom: 2rem;
+    /* distanza dal fondo */
+    left: 50%;
+    /* centrata orizzontalmente */
+    transform: translateX(-50%);
     z-index: 10;
 }
 
 /* Layout di base per #lunadimiele */
 #lunadimiele {
-    position: relative;        
-    display: flex;            
-    flex-direction: row;      
-    align-items: center;      
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
-    height: 100vh;            
+    height: 100vh;
 }
 
 /* Stile per l'immagine della lapa a destra */
 #lunadimiele img.lapa-right {
-    height: 100%;       
-    width: auto;        
-    flex-shrink: 0;     
-    object-fit: cover;  
-    order: 2;          /* Sposta l'immagine alla fine del container flex */
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    order: 2;
+    /* Sposta l'immagine alla fine del container flex */
 }
 
 /* Contenitore del testo a sinistra */
 #lunadimiele .lunadimiele-text {
-    flex: 1;                        
-    display: flex;                  
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0rem;                  
+    padding: 0rem;
     box-sizing: border-box;
-    order: 1;          /* Sposta il testo all'inizio del container flex */
+    order: 1;
+    /* Sposta il testo all'inizio del container flex */
 }
 
 /* Adattamento dimensione testo */
 #lunadimiele .lunadimiele-text p.bigtext {
-    font-size: calc(1.8rem + 2vw);  
+    font-size: calc(1.8rem + 2vw);
     line-height: 1.2;
     margin: 0;
     padding: 0;
 }
 
 #lunadimiele .arrow-bounce {
-    position: absolute;         
-    bottom: 2rem;              
-    left: 50%;                 
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
     transform: translateX(-50%);
-    z-index: 10;               
+    z-index: 10;
 }
 
 /* Responsiveness per schermi più piccoli */
@@ -1601,12 +1697,12 @@ ALL OTHER UGLY STUFF
     #lunadimiele {
         flex-direction: column;
     }
-    
+
     #lunadimiele img.lapa-right {
         height: auto;
         width: 100%;
     }
-    
+
     #lunadimiele .lunadimiele-text p.bigtext {
         font-size: calc(1.5rem + 2vw);
     }
@@ -1625,41 +1721,56 @@ HONEYMOON
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: stretch;    /* Estende gli elementi per riempire l'altezza */
-    justify-content: space-between; /* Distribuisce gli elementi */
-    height: 100vh;           /* Imposta l'altezza della sezione */
-    padding: 0 5%;           /* Aggiunge spaziatura laterale */
+    align-items: stretch;
+    /* Estende gli elementi per riempire l'altezza */
+    justify-content: space-between;
+    /* Distribuisce gli elementi */
+    height: 100vh;
+    /* Imposta l'altezza della sezione */
+    padding: 0 5%;
+    /* Aggiunge spaziatura laterale */
 }
 
 .honeymoon-section .img-over {
-    position: static;         /* Rimuove position absolute */
-    height: 100%;             /* Occupa l'intera altezza della sezione */
-    width: auto;              /* Mantiene le proporzioni */
-    flex-shrink: 0;           /* Impedisce alla larghezza di ridursi */
-    object-fit: cover;        /* Assicura che l'immagine copra l'area senza deformazioni */
+    /* position: static;         Rimuove position absolute */
+    height: 75vh;
+    /* Occupa l'intera altezza della sezione */
+    width: auto;
+    /* Mantiene le proporzioni */
+    flex-shrink: 0;
+    /* Impedisce alla larghezza di ridursi */
+    object-fit: cover;
+    /* Assicura che l'immagine copra l'area senza deformazioni */
+    object-position: bottom;
 }
 
 .honeymoon-text {
-    flex: 1;                   /* Occupa lo spazio rimanente */
+    flex: 1;
+    /* Occupa lo spazio rimanente */
     display: flex;
     flex-direction: column;
-    align-items: center;       /* Centra orizzontalmente */
-    justify-content: center;   /* Centra verticalmente */
-    text-align: center;        /* Allinea il testo al centro */
+    align-items: center;
+    /* Centra orizzontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+    text-align: center;
+    /* Allinea il testo al centro */
     padding: 2rem;
     box-sizing: border-box;
 }
 
 .honeymoon-text h1,
 .honeymoon-text p {
-    text-align: center; /* Garantisce la centratura del testo */
+    text-align: center;
+    /* Garantisce la centratura del testo */
 }
 
 .honeymoon-text .iban {
     display: block;
     font-family: 'EB Garamond';
     font-size: calc(1.5rem + 2.2vw);
-    margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
+    margin-top: 0;
+    /* Eventualmente elimina lo spazio sopra l'IBAN */
     margin-bottom: 1rem;
 }
 
@@ -1667,7 +1778,8 @@ HONEYMOON
     display: inline;
     font-family: 'EB Garamond';
     font-size: calc(100wh/50);
-    margin-top: 0; /* Eventualmente elimina lo spazio sopra l'IBAN */
+    margin-top: 0;
+    /* Eventualmente elimina lo spazio sopra l'IBAN */
     margin-bottom: 1rem;
 }
 
@@ -1677,37 +1789,42 @@ HONEYMOON
 }
 
 .swift-code {
-    display: inline; /* Mantiene "BIC/SWIFT:" in linea */
+    display: inline;
+    /* Mantiene "BIC/SWIFT:" in linea */
 }
 
 /* Nuova classe, simile a .navigation, ma con larghezza ridotta 
    per non “spanciarsi” sull’intera sezione. */
-   .honeymoon-navigation {
+.honeymoon-navigation {
     /* Se la sezione è .honeymoon-section con position: relative, puoi fare: */
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    width: 1000px; /* es. ampiezza dedicata */
+    width: 1000px;
+    /* es. ampiezza dedicata */
     height: 70px;
-  
+
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* HOME a sinistra, RSVP a destra */
+    justify-content: space-between;
+    /* HOME a sinistra, RSVP a destra */
     z-index: 999;
-  }
+}
 
 /* Replichi lo stile dei bottoni usato in .navigation, 
    ma lo applichi a .honeymoon-navigation */
 .honeymoon-navigation a img {
-    height: 70px;  /* o 60px, vedi tu */
+    height: 70px;
+    /* o 60px, vedi tu */
     box-shadow: var(--shadow-1-elevation-medium);
     border-radius: 100px;
     transition: all 0.8s ease-in-out;
 }
 
 .honeymoon-navigation a.logo {
-    margin-right: 1rem; /* come in .navigation a.logo */
+    margin-right: 1rem;
+    /* come in .navigation a.logo */
     z-index: 4;
 }
 
@@ -1728,9 +1845,11 @@ HONEYMOON
     box-shadow: var(--shadow-1-elevation-high);
     transition: all 0.8s ease-in-out;
 }
+
 .honeymoon-navigation .test div p {
     color: var(--green);
 }
+
 .honeymoon-navigation a.logo:hover .test {
     opacity: 100%;
 }
