@@ -21,7 +21,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
-    <link    
+    <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
 </div>
 
 <body class="home">
-<section class="hero">
+    <section class="hero">
         <img class="img-over img-top img-left slide-in-blurred-tl dur-250" src="assets/Zagara.png">
         <img class="img-over img-top img-right slide-in-blurred-tr dur-350" src="assets/Limoni.png">
         <img class="img-over img-bottom img-left slide-in-blurred-bl dur-3" src="assets/Cosmos.png">
@@ -56,81 +56,96 @@
         <a href="#welcome" class="bounce arrow-bounce focus-in dur-2">
             <i class="fa fa-2x fa-chevron-down"></i>
         </a>
-</section>
-<section id="welcome" class="standard">
-        <div>
+    </section>
+    <section id="welcome" class="standard">
+        <div id="welcome-text-container">
             <p class="adaptive-bigtext">
                 Celebreremo il nostro matrimonio <span class="daje">fra l'Etna e il Mare</span>.
             </p>
-            <p class="adaptive-bigtext">    
+            <p class="adaptive-bigtext">
                 Siete tutti invitati a <span class="daje">festeggiare</span> con noi!
-            </p>            
-            <div class="divider bottom"></div>
-            <p class="location">
-                <span class="daje">22 giugno 2025 - 16:00</span> presso <span class="daje"><a href="https://villafago.it" target="_blank">I Giardini di Villa Fago</a></span><br/> 95010, Santa Venerina (CT) - Sicilia
             </p>
+            <div class="location">
+                <span class="daje" style="margin-bottom:30px">22 giugno 2025 - ore 17:00</span>
+                <span class="daje"><a href="https://villafago.it" target="_blank">I Giardini di Villa Fago</a></span>
+                <span style="font-size:25px; ">Santa Venerina (CT) - Sicilia</span>
+            </div>
             <p class="details">
                 <a href="https://maps.app.goo.gl/eJPUCdPobgdm3n1W8" target="_blank">Apri su Google Maps</a>
             </p>
         </div>
-        <img class="img-over img-bottom img-left" src="assets/Vulcanomare.png" alt="vulcanomare">
+        <img id="img-vulcano" class="img-over img-bottom img-left" src="assets/Vulcanomare.png" alt="vulcanomare">
         <a href="#organizzazione" class="bounce arrow-bounce focus-in dur-2">
             <i class="fa fa-2x fa-chevron-down"></i>
         </a>
-</section>
-<section id="organizzazione" class="standard alt">
-    <!-- Metti per primo l’ulivo, così è a sinistra nel layout flex -->
-    <img class="ulivo" src="assets/Ulivo.png" alt="ulivo">
-    
-    <!-- Qui il testo a destra, centrato orizzontalmente e verticalmente -->
-    <div class="organizzazione-text">
-        <p id="header-ulivo" class="adaptive-bigtext">
-            <a href="location.html">Scoprite qui</a><br/> come raggiungerci,<br/>
-                dove alloggiare<br/>
+    </section>
+    <section id="organizzazione" class="standard alt">
+        <!-- Metti per primo l’ulivo, così è a sinistra nel layout flex -->
+        <img class="ulivo" src="assets/Ulivo.png" alt="ulivo">
+
+        <!-- Qui il testo a destra, centrato orizzontalmente e verticalmente -->
+        <div class="organizzazione-text">
+            <p id="header-ulivo" class="adaptive-bigtext">
+                <a href="location.html">Scoprite qui</a><br /> come raggiungerci,<br />
+                dove alloggiare<br />
                 e cosa fare nei dintorni!
-        </p>
-    </div>
-    <a href="#rsvp" class="bounce arrow-bounce focus-in dur-2">
-        <i class="fa fa-2x fa-chevron-down"></i>
-    </a>
-</section>
-<section id="rsvp" class="standard">
-        <div>
-            <img class="img-remark remark-top" src="assets/Testedimoro.png">
-            <p class="adaptive-bigtext">
-                Speriamo possiate partecipare al nostro giorno speciale!
             </p>
-            <p class="adaptive-text">
-                Vi chiediamo gentilmente di <a href="https://google.com" target="_blank" class="daje">compilare il modulo</a> entro il 31 marzo 2025.
-            </p>
+        </div>
+        <a href="#rsvp" class="bounce arrow-bounce focus-in dur-2">
+            <i class="fa fa-2x fa-chevron-down"></i>
+        </a>
+    </section>
+    <section id="rsvp" class="standard">
+        <div id="testa-container">
+            <img id="teste-di-cazzo" class="img-remark remark-top" src="assets/Testedimoro.png">
+            <img id="testa-di-cazzo-lui" class="testa" src="assets/Testedimorolui.png">
+
+            <div id="partecipazione-mobile" class="adaptive-bigtext">
+                <span>Speriamo possiate partecipare</span>
+                <span style="margin-bottom:25px">al nostro giorno speciale!</span>
+
+
+                <span>Vi chiediamo gentilmente</span>
+                <span>
+                    di <a href="https://google.com" target="_blank" class="daje">compilare il
+                        modulo</a>
+                </span>
+                <span>entro il 31 marzo 2025.</span>
+            </div>
+
+            <div id="partecipazione-desktop" class="adaptive-bigtext">
+                Speriamo possiate partecipare al nostro giorno speciale! <br/>Vi chiediamo gentilmente di <a href="https://google.com" target="_blank" class="daje">compilare il modulo</a> entro il 31 marzo 2025.
+            </div>
+
+            <img id="testa-di-cazzo-lei" class="testa" src="assets/Testedimorolei.png">
         </div>
         <a href="#lunadimiele" class="bounce arrow-bounce focus-in dur-2">
             <i class="fa fa-2x fa-chevron-down"></i>
         </a>
-</section>
-<section id="lunadimiele" class="standard alt">
-    <!-- Testo a sinistra -->
-    <div class="lunadimiele-text">
-        <p class="adaptive-bigtext-wrap">
-            La vostra presenza è<br/><span class="daje">il regalo più importante</span>!
+    </section>
+    <section id="lunadimiele" class="standard alt">
+        <!-- Testo a sinistra -->
+        <div class="lunadimiele-text">
+            <p class="adaptive-bigtext-wrap">
+                La vostra presenza è<br /><span class="daje">il regalo più importante</span>!
+            </p>
+            <div class="spacer"></div>
+            <p class="adaptive-bigtext-wrap">
+                Se lo desiderate, potete<br /><a href="honeymoon.html">contribuire alla nostra luna di miele</a>.
+            </p>
+        </div>
+        <!-- Lapa a destra -->
+        <img class="lapa-right" src="assets/Lapa.png" alt="ulivo">
+
+        <a href="#viaspettiamo" class="bounce arrow-bounce focus-in dur-2">
+            <i class="fa fa-2x fa-chevron-down"></i>
+        </a>
+    </section>
+    <section id="viaspettiamo" class="standard">
+        <p class="adaptive-bigtext">
+            <span class="daje">Vi aspettiamo!</span>
         </p>
-        <div class="spacer"></div>
-        <p class="adaptive-bigtext-wrap">
-            Se lo desiderate, potete<br/><a href="honeymoon.html">contribuire alla nostra luna di miele</a>.
-        </p>
-    </div>
-    <!-- Lapa a destra -->
-    <img class="lapa-right" src="assets/Lapa.png" alt="ulivo">
-    
-    <a href="#viaspettiamo" class="bounce arrow-bounce focus-in dur-2">
-        <i class="fa fa-2x fa-chevron-down"></i>
-    </a>
-</section>
-<section id="viaspettiamo" class="standard">
-    <p class="adaptive-bigtext">
-       <span class="daje">Vi aspettiamo!</span>
-    </p>
-</section>
+    </section>
 
 </body>
 
