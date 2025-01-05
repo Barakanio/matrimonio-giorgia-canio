@@ -6,6 +6,8 @@
     --beige: #f6f2e9;
     --red: #A66565;
     --text: #5B7343;
+    --return-arrow-size: 50px;
+    --return-arrow-size-small: 40px;
     --shadow-color: 79deg 26% 66%;
     --shadow-1-elevation-low: 0px 0.2px 0.2px hsl(var(--shadow-color) / 0.34), 0px 0.4px 0.5px -1.2px hsl(var(--shadow-color) / 0.34), 0px 0.9px 1px -2.5px hsl(var(--shadow-color) / 0.34);
     --shadow-1-elevation-medium: 0px 0.2px 0.2px hsl(var(--shadow-color) / 0.36), 0px 0.7px 0.8px -0.8px hsl(var(--shadow-color) / 0.36), 0px 1.8px 2px -1.7px hsl(var(--shadow-color) / 0.36), 0.1px 4.5px 5.1px -2.5px hsl(var(--shadow-color) / 0.36);
@@ -35,6 +37,12 @@ html {
 body {
     margin: 0px;
 }
+
+.pigna {
+    height: 80vh;
+    width: auto;
+}
+
 
 /* Makes sure everything is centered. Always. */
 section,
@@ -246,7 +254,7 @@ p.bigtext {
     /* Usa il colore della variabile predefinita */
     font-weight: 400;
     /* Mantiene lo stile del font */
-    font-size: calc(100vw/29);
+    font-size: calc(100vw/39);
     padding: 0px;
     /* Eredita il padding */
     margin: 0 auto;
@@ -263,7 +271,7 @@ p.bigtext {
     /* Usa il colore della variabile predefinita */
     font-weight: 400;
     /* Mantiene lo stile del font */
-    font-size: calc(100vw/50);
+    font-size: 2vw;
     padding: 0px;
     /* Eredita il padding */
     margin: 0 auto;
@@ -1344,6 +1352,16 @@ ANIMATIONS
 /***
 RESPONSIVENESS
 ***/
+#return-arrow {
+    z-index: 4;
+    width: var(--return-arrow-size);
+    height: var(--return-arrow-size)
+}
+
+#return-arrow-img {
+    width: var(--return-arrow-size);
+    height: var(--return-arrow-size);
+}
 
 
 @media (max-width: 1200px) {
@@ -1354,13 +1372,105 @@ RESPONSIVENESS
 }
 
 /* TABLETS */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+    .adaptive-text {
+        font-size: 20px;
+    }
+
+    .honeymoon {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .adaptive-medtext {
+        font-size: 30px !important;
+    }
+
+    .honeymoon-text .iban {
+        font-size: 30px !important;
+    }
+
+    .honeymoon-text {
+        display: block !important;
+        width: 100vw !important;
+        padding: 0px !important;
+    }
+
+    .honeymoon-section {
+        padding: 0px !important;
+        width: 100vw !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+
+    .pigna-mobile-container {
+        display: flex !important;
+    }
+
+    .pigna-mobile {
+        height: 25vh !important;
+        display: block !important;
+    }
+
+    .pigna {
+        height: 25vh !important;
+        display: block !important;
+    }
+
+    .partecipazione-mobile-text {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding: 0 7vw;
+    }
+
+    .home section.hero .img-top.img-left {
+        height: 40vw;
+    }
+
+    .home section.hero .img-top.img-right {
+        height: 0vw;
+    }
+
+    .home section.hero .img-bottom.img-left {
+        height: 0vw;
+    }
+
+    .home section.hero .img-bottom.img-right {
+        height: 35vw;
+        /* Nuova regola per spostare Ninfee.png in alto */
+    }
+
+    .home .date {
+        margin-top: 4vh;
+        /* Avvicina la data al titolo */
+    }
+
+    .hero-content {
+        margin-top: 30px;
+        /* Sposta verso il basso di soli 50px per la versione mobile */
+    }
+
+    .home h1 {
+        font-size: 1.5rem;
+    }
+
+    .home .bounce {
+        display: none;
+    }
+
+    .home div.rsvp {
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 4;
+    }
+
+
 
     .dono {
         padding-top: 20px;
         padding-bottom: 20px;
         width: 80%;
-        display: block;
+        display: flex;
         font-size: 40px !important;
     }
 
@@ -1423,7 +1533,7 @@ RESPONSIVENESS
     }
 
     #santa-venerina {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .details>a {
@@ -1485,19 +1595,35 @@ RESPONSIVENESS
         height: 506px;
     }
 
-
-
-    .adaptive-text {
-        width: 80%;
-        /* Limita la larghezza all'80% dello schermo */
-        font-size: calc(2vw + 1rem);
-        /* Rende la dimensione adattiva */
-    }
 }
 
 /* PHONES */
 @media (max-width: 430px) {
+    #return-arrow {
+        width: var(--return-arrow-size-small);
+        height: var(--return-arrow-size-small);
+    }
 
+    #return-arrow-img {
+        width: var(--return-arrow-size-small);
+        height: var(--return-arrow-size-small);
+    }
+
+    .adaptive-text {
+        font-size: 13px;
+    }
+
+    .adaptive-medtext {
+        font-size: 20px !important;
+    }
+
+    .honeymoon-text .iban {
+        font-size: 20px !important;
+    }
+
+    .partecipazione-mobile-text {
+        padding: 0 3vw;
+    }
 
     .dono {
         font-size: 30px !important;
@@ -1528,7 +1654,7 @@ RESPONSIVENESS
     }
 
     #santa-venerina {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .details>a {
@@ -1671,7 +1797,7 @@ RESPONSIVENESS
     }
 
     .internal .navigation {
-        position: fixed;
+        position: absolute;
     }
 
     .internal .logo {
@@ -1897,6 +2023,14 @@ ALL OTHER UGLY STUFF
     padding: 0;
 }
 
+.pigna-mobile {
+    display: none;
+}
+
+.pigna-mobile-container {
+    display: none;
+}
+
 #lunadimiele .arrow-bounce {
     position: absolute;
     bottom: 2rem;
@@ -1936,11 +2070,12 @@ HONEYMOON
     flex-direction: row;
     align-items: stretch;
     /* Estende gli elementi per riempire l'altezza */
-    justify-content: space-between;
+    justify-content: flex-end;
     /* Distribuisce gli elementi */
     height: 100vh;
+    width: 90vw;
     /* Imposta l'altezza della sezione */
-    padding: 0 5%;
+    padding: 0 0 0 2%;
     /* Aggiunge spaziatura laterale */
 }
 
@@ -1958,7 +2093,7 @@ HONEYMOON
 }
 
 .honeymoon-text {
-    flex: 1;
+    width: 50vw;
     /* Occupa lo spazio rimanente */
     display: flex;
     flex-direction: column;
@@ -1981,7 +2116,7 @@ HONEYMOON
 .honeymoon-text .iban {
     display: block;
     font-family: 'EB Garamond';
-    font-size: calc(1.5rem + 2.2vw);
+    font-size: 3.5vw;
     margin-top: 0;
     /* Eventualmente elimina lo spazio sopra l'IBAN */
     margin-bottom: 1rem;
