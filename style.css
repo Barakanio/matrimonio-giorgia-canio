@@ -415,6 +415,14 @@ p.details a:hover {
     color: var(--red);
 }
 
+a {
+    color:var(--green);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--red); /* Rosso definito nella root */
+}
 
 p.details a,
 p.details a:visited,
