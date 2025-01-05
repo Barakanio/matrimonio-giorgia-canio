@@ -218,6 +218,8 @@ p.bigtext {
     margin: 0px;
 }
 
+
+
 /* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext {
     font-family: 'Cormorant Garamond', serif;
@@ -289,6 +291,24 @@ p.bigtext {
     white-space: nowrap;
 }
 
+
+.dono {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#luna-container {
+    width: 100vw;
+    flex-direction: row;
+}
+
+.lunadimiele-text {
+    flex-direction: column;
+}
+
 p.adaptive-text a {
     color: var(--text);
     font-weight: bolder;
@@ -342,6 +362,10 @@ p.subtext {
     /* Per enfatizzare la location */
     color: var(--green);
     /* Mantieni il colore in tema */
+}
+
+#lapa-senza {
+    display: none;
 }
 
 #testa-di-cazzo-lui {
@@ -499,7 +523,7 @@ img.img-remark {
 }
 
 .testa {
-    width: 35vw;
+    width: 25vw;
 }
 
 #testa-container {
@@ -1313,6 +1337,10 @@ ANIMATIONS
     font-size: 25px;
 }
 
+.welcome-text {
+    display: inline;
+}
+
 /***
 RESPONSIVENESS
 ***/
@@ -1325,7 +1353,63 @@ RESPONSIVENESS
 
 }
 
+/* TABLETS */
 @media (max-width: 992px) {
+
+    .dono {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 80%;
+        display: block;
+        font-size: 40px !important;
+    }
+
+    #luna-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%
+    }
+
+    #lapa-senza {
+        width: 75%;
+        display: block;
+    }
+
+    .lapa-right {
+        display: none;
+    }
+
+    #welcome-text-container {
+        height: 50%;
+        padding: 0px 15vw;
+    }
+
+    #header-ulivo {
+        margin-top: 50px
+    }
+
+    #organizzazione {
+        align-items: flex-start !important;
+    }
+
+
+    .ulivo {
+        height: 60% !important;
+        position: absolute;
+        bottom: 0px
+    }
+
+    #partecipazione-mobile {
+        padding: 0px 9vw;
+        display: flex;
+        font-size: 40px !important;
+    }
+
+    #partecipazione-desktop {
+        display: none;
+    }
+
+
     .adaptive-bigtext {
         font-size: 40px;
     }
@@ -1411,13 +1495,32 @@ RESPONSIVENESS
     }
 }
 
-@media (max-width: 398px) {
+/* PHONES */
+@media (max-width: 430px) {
+
+
+    .dono {
+        font-size: 30px !important;
+    }
+
+    #welcome>div {
+        height: 50% !important
+    }
+
+
+    #partecipazione-mobile {
+        padding: 0px 9vw;
+        display: flex;
+        font-size: 30px !important;
+    }
+
     .adaptive-bigtext {
         font-size: 30px;
     }
 
     .welcome-text {
-        font-size: 30px !important
+        font-size: 30px !important;
+        display: flex !important;
     }
 
     .location {
@@ -1449,19 +1552,7 @@ RESPONSIVENESS
         justify-content: space-around;
     }
 
-    #partecipazione-mobile {
-        display: flex;
-        font-size: 25px !important;
-    }
 
-    #partecipazione-desktop {
-        display: none;
-    }
-
-    #welcome-text-container {
-        height: 50%;
-        padding: 0px 15vw;
-    }
 
 
 
@@ -1472,19 +1563,7 @@ RESPONSIVENESS
         left: -130vw;
     }
 
-    .ulivo {
-        height: 60% !important;
-        position: absolute;
-        bottom: 0px
-    }
 
-    #header-ulivo {
-        margin-top: 50px
-    }
-
-    #organizzazione {
-        align-items: flex-start !important;
-    }
 
     h1,
     p.bigtext,
@@ -1650,8 +1729,8 @@ ALL OTHER UGLY STUFF
 }
 
 #welcome>div {
-    margin-top: 3vh;
-    /* Sposta il contenuto del 20% dall'inizio della sezione */
+    height: 50%
+        /* Sposta il contenuto del 20% dall'inizio della sezione */
 }
 
 #rsvp p.adaptive-bigtext {
@@ -1789,7 +1868,7 @@ ALL OTHER UGLY STUFF
 
 /* Stile per l'immagine della lapa a destra */
 #lunadimiele img.lapa-right {
-    height: 100%;
+    height: 100vh;
     width: auto;
     flex-shrink: 0;
     object-fit: cover;
