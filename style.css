@@ -6,7 +6,7 @@
     --beige: #f6f2e9;
     --red: #A66565;
     --text: #5B7343;
-    --return-arrow-size: 50px;
+    --return-arrow-size: 70px;
     --return-arrow-size-small: 40px;
     --shadow-color: 79deg 26% 66%;
     --shadow-1-elevation-low: 0px 0.2px 0.2px hsl(var(--shadow-color) / 0.34), 0px 0.4px 0.5px -1.2px hsl(var(--shadow-color) / 0.34), 0px 0.9px 1px -2.5px hsl(var(--shadow-color) / 0.34);
@@ -29,14 +29,39 @@
 }
 
 
+
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-green)
+}
+
 body {
     margin: 0px;
 }
+
 
 .pigna {
     height: 80vh;
@@ -136,7 +161,7 @@ section.hero .img-over {
     /* Altezza standard */
     width: 100%;
     /* Mantiene proporzioni */
-    bottom: 0;
+    bottom: -5vh;
     /* Adeso al bordo inferiore */
     left: 0;
     /* Adeso al bordo sinistro */
@@ -226,7 +251,13 @@ p.bigtext {
     margin: 0px;
 }
 
+#return-icon {
+    color: var(--beige)
+}
 
+.menu-icon {
+    color:var(--light-green)
+}
 
 /* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext {
@@ -333,10 +364,6 @@ p.hugetext {
     margin: 0px;
 }
 
-.daje {
-    font-weight: bolder;
-    font-style: italic;
-}
 
 div.divider {
     width: 25%;
@@ -416,12 +443,13 @@ p.details a:hover {
 }
 
 a {
-    color:var(--green);
+    color: var(--green);
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--red); /* Rosso definito nella root */
+    color: var(--red);
+    /* Rosso definito nella root */
 }
 
 p.details a,
@@ -628,8 +656,7 @@ div.navigation {
     position: fixed;
     display: flex;
     flex-direction: row;
-    /* width: 80vw; */
-    height: 70px;
+    width: 100vw; 
     bottom: 5%;
     z-index: 4;
 }
@@ -651,9 +678,7 @@ div.menu {
     flex-direction: row;
     justify-content: space-around;
     box-shadow: var(--shadow-1-elevation-medium);
-    border-radius: 100px;
-    height: 70px;
-    width: 70vw;
+    width: 100vw;
 }
 
 div.navigation a,
@@ -1360,6 +1385,12 @@ ANIMATIONS
 /***
 RESPONSIVENESS
 ***/
+#return-arrow-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 #return-arrow {
     z-index: 4;
     width: var(--return-arrow-size);
@@ -1381,6 +1412,11 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
+    .internal .navigation {
+        position: fixed;
+        bottom: 0px;
+    }
+
     .adaptive-text {
         font-size: 20px;
     }
@@ -1541,7 +1577,7 @@ RESPONSIVENESS
     }
 
     #santa-venerina {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .details>a {
@@ -1607,6 +1643,7 @@ RESPONSIVENESS
 
 /* PHONES */
 @media (max-width: 430px) {
+    
     #return-arrow {
         width: var(--return-arrow-size-small);
         height: var(--return-arrow-size-small);
@@ -1618,7 +1655,7 @@ RESPONSIVENESS
     }
 
     .adaptive-text {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .adaptive-medtext {
@@ -1662,7 +1699,7 @@ RESPONSIVENESS
     }
 
     #santa-venerina {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .details>a {
@@ -1804,9 +1841,7 @@ RESPONSIVENESS
         z-index: 4;
     }
 
-    .internal .navigation {
-        position: absolute;
-    }
+
 
     .internal .logo {
         position: fixed;
@@ -1821,7 +1856,8 @@ RESPONSIVENESS
     }
 
     .internal .menu {
-        width: 90vw;
+        background-color: var(--green);
+        width: 100vw;
         font-size: 0.9rem;
         height: 50px;
     }
