@@ -31,6 +31,7 @@
 
 
 
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -44,13 +45,12 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--green);
-    border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -266,9 +266,20 @@ p.bigtext {
 }
 
 .menu-icon {
+    font-size: 20px;
     color: var(--light-green)
 }
 
+.margherita-desktop {
+    display: block;
+}
+
+#margherita-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
 
 .text {
     color: var(--text);
@@ -293,6 +304,12 @@ p.bigtext {
     margin: 0 auto;
     text-align: center;
 }
+
+.mezzo-container {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* Nuova classe adattiva basata su bigtext */
 .adaptive-bigtext-wrap {
@@ -674,7 +691,7 @@ div.navigation {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    bottom: 5%;
+    bottom: 0px;
     z-index: 4;
 }
 
@@ -690,13 +707,40 @@ div.navigation a.logo {
 }
 
 div.menu {
-    background-color: white;
+
+    height: 40px;
+    background-color: var(--green);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     box-shadow: var(--shadow-1-elevation-medium);
     width: 100vw;
 }
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item .menu-text {
+    opacity: 0;
+    /* Hide text initially */
+    margin-left: 10px;
+    color: var(--light-green);
+    transition: opacity 0.7s ease;
+}
+
+.menu-item:hover .menu-text {
+    opacity: 1;
+    /* Show text on hover */
+}
+
+.menu-item i {
+    opacity: 1;
+    /* Icon is visible initially */
+    transition: opacity 0.7s ease;
+}
+
 
 div.navigation a,
 div.navigation a:any-link,
@@ -825,12 +869,32 @@ p.description {
     height: auto;
 }
 
+#locations-container {
+    height: 200%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10vh;
+    justify-content: space-between;
+    column-gap: 5vw;
+    padding: 5%;
+    align-items: start;
+}
+
 .drink-img {
-    width: 20vw
+    width: 10vw
+}
+
+.drink-img-scaled {
+    width: 5vw
+}
+
+.drink-img-container {
+    padding: 0 2.4vw
 }
 
 .eat-drink-text-header {
-    font-size: 30px;
+    font-size: 24px;
+    text-align: left;
 }
 
 .eat-text-container {
@@ -840,11 +904,12 @@ p.description {
 }
 
 .to-eat-container {
-    margin-top: 10vh;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+
 }
 
 .eat-drink-text {
@@ -1452,7 +1517,21 @@ RESPONSIVENESS
 }
 
 #drink {
-    height:110vh;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.mezzi-header {
+    margin: 0px;
+    text-align: left;
+}
+
+.aeroporto-text-container {
+    align-items: flex-start;
+}
+
+.location-img {
+    margin-right: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1464,6 +1543,79 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
+    .menu-text {
+        width:0px;
+    }
+
+    #mezzi-container {
+        height: 80% !important;
+        align-items: center !important;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+
+    .aeroporto-text-container {
+        align-items: center;
+    }
+
+    .location-img {
+        margin-right: 0px;
+    }
+
+    .mezzo-container {
+        flex-direction: column;
+    }
+
+    .mezzi-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #margherita-container {
+        justify-content: center;
+    }
+
+    .margherita-desktop {
+        display: none;
+    }
+
+    #drink {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+
+    #locations-container {
+        grid-template-columns: none;
+        grid-row-gap: 1vh;
+        padding: 5%;
+
+    }
+
+    .to-eat-container {
+        margin-top: 5vh;
+        align-items: center;
+    }
+
+    .drink-img {
+        width: 20vw
+    }
+
+    .drink-img-scaled {
+        width: 12vw
+    }
+
+    .drink-img-container {
+        padding: 0 3.75vw
+    }
+
+    .internal section.hero {
+        height: 95vh;
+    }
 
     .adaptive-bigtext {
         font-size: 40px;
@@ -1713,6 +1865,11 @@ RESPONSIVENESS
     #return-icon-luna {
         font-size: 30px;
     }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
 
     #return-arrow {
         width: var(--return-arrow-size-small);
