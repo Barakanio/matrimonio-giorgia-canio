@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Suggestions</title>
+    <title>Info</title>
     <link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
     <!-- <link rel="apple-touch-icon" href="/assets/favicon.ico">
     <link rel="icon" sizes="192x192" href="/assets/favicon.ico"> -->
@@ -37,22 +37,26 @@
     <section id="location" style="background-color: white;" class="hero">
         <div style="display: flex; justify-content: space-evenly; height: calc(100% - 5vh); width:90vw;">
 
-            <div>
-                <img class="location-img" src="assets/Aereo.png" alt="aereo" />
-                <span class="adaptive-bigtext">Aeroporto di Catania</span>
-                <span class="adaptive-smalltext">+ auto a noleggio / treno per Giarre-Riposto </span>
+            <div id="mezzi-container" style="display:flex; height:50%; justify-content: space-evenly; align-items: flex-start;">
+                <div class="mezzo-container">
+                    <img class="location-img" src="assets/Aereo.png" alt="aereo" />
+                    <div style="display:flex;flex-direction: column;" class="aeroporto-text-container">
+                        <span class="adaptive-bigtext mezzi-header">Aeroporto di Catania</span>
+                        <span class="adaptive-smalltext">+ auto a noleggio / treno per Giarre-Riposto </span>
+                    </div>
+                </div>
+
+                <div class="mezzo-container">
+                    <img class="location-img" src="assets/Treno.png" alt="aereo" />
+                    <span class="adaptive-bigtext">Stazione di Giarre-Riposto</span>
+                </div>
+
+                <div class="mezzo-container">
+                    <img class="location-img" src="assets/Auto.png" alt="aereo" />
+                    <span class="adaptive-bigtext">A18 - Uscita Giarre </span>
+                </div>
             </div>
 
-            <div>
-                <img class="location-img" src="assets/Treno.png" alt="aereo" />
-                <span class="adaptive-bigtext">Stazione di Giarre-Riposto</span>
-            </div>
-
-            <div>
-                <img class="location-img" src="assets/Auto.png" alt="aereo" />
-                <span class="adaptive-bigtext">A18 - Uscita Giarre </span>
-
-            </div>
             <div style="border-top:1px solid var(--green); width:30%">
 
             </div>
@@ -64,40 +68,77 @@
         <div class="navigation">
 
             <div class="menu">
-                <a href="/index.html#organizzazione"><i id="return-icon" class="fa-solid fa-arrow-left"></i></a>
-                <a href="#location"><i class="fa-solid fa-plane-departure menu-icon"></i></a>
-                <a href="#accomodations"><i class="fa-solid fa-bed  menu-icon"></i></a>
-                <a href="#drink"><i class="fa-solid fa-utensils  menu-icon"></i></a>
+                <a href="/index.html#organizzazione" class="menu-item">
+                    <i id="return-icon" class="fa-solid fa-arrow-left"></i>
+                    <span class="menu-text">Indietro</span>
+                </a>
+                <a href="#location" class="menu-item">
+                    <i class="fa-solid fa-plane-departure menu-icon"></i>
+                    <span class="menu-text">Come arrivare</span>
+                </a>
+                <a href="#accomodations" class="menu-item">
+                    <i class="fa-solid fa-bed menu-icon"></i>
+                    <span class="menu-text">Dove pernottare</span>
+                </a>
+                <a href="#drink" class="menu-item">
+                    <i class="fa-solid fa-utensils menu-icon"></i>
+                    <span class="menu-text">Cosa fare</span>
+                </a>
             </div>
-
         </div>
     </section>
 
 
 
     <section id="accomodations" class="standard alt">
+
         <div style="height:60%; display: flex; justify-content: space-between; padding: 0 18vw;">
             <div>
-                <span style="margin-bottom: 15px;" class="adaptive-bigtext">Saremmo lieti di provvedere al vostro
-                    pernottamento il 21/06 e il
+                <span class="adaptive-bigtext">Saremmo lieti di provvedere al vostro
+                    pernottamento
+                </span>
+                <span style="margin-bottom: 15px;" class="adaptive-bigtext">il 21/06 e il
                     22/06!</span>
                 <span class="adaptive-smalltext">Selezionate le date nel RSVP</span>
             </div>
-            <img style="width:27vh" class="location-img" src="assets/Margherita.png" alt="Margherita" />
+
+            <div id="margherita-container">
+                <img style="width:27vh" class="location-img" src="assets/Margherita.png" alt="Margherita" />
+
+                <img style="width:27vh" class="location-img margherita-desktop" src="assets/Margherita.png"
+                    alt="Margherita" />
+
+                <img style="width:27vh" class="location-img margherita-desktop" src="assets/Margherita.png"
+                    alt="Margherita" />
+            </div>
         </div>
+
+
     </section>
 
 
 
     <section id="drink" class="standard">
-        <div style="height:200%; display: flex; justify-content: space-between; padding:0vh 5vw 15vh 5vw">
+        <div id="locations-container">
 
 
             <div class="to-eat-container">
                 <img class="drink-img" src="assets/Granita.png" alt="Granita" />
                 <div class="eat-text-container">
-                    <span class="eat-drink-text-header text">A18 - Uscita Giarre </span>
-                    <span class="adaptive-smalltext eat-drink-text ">Saremmo lieti di provvedere al vostro</span>
+                    <a href="https://maps.app.goo.gl/rWZLc4tN5jXktdBB6" class="eat-drink-text-header text">CHIOSCO
+                        SCHEMBRI</a>
+                    <span class="adaptive-smalltext eat-drink-text ">Bibite e ottime granite artigianali: chiedete dello
+                        Schembri lemon!</span>
+                </div>
+            </div>
+
+            <div class="to-eat-container">
+                <img class="drink-img" src="assets/Gambero.png" alt="Pesce" />
+                <div class="eat-text-container">
+                    <a href="https://maps.app.goo.gl/9KvfhpWu7v6vMFTSA" class="eat-drink-text-header text">PALAZZO
+                        ROSSO</a>
+                    <span class="adaptive-smalltext eat-drink-text ">Pesce fresco in un antico palmento alle pendici
+                        dell'Etna</span>
                 </div>
             </div>
 
@@ -105,42 +146,73 @@
             <div class="to-eat-container">
                 <img class="drink-img" src="assets/Tagliere.png" alt="Tagliere" />
                 <div class="eat-text-container">
-                    <span class="eat-drink-text-header text">A18 - Uscita Giarre </span>
-                    <span class="adaptive-smalltext eat-drink-text ">Saremmo lieti di provvedere al vostro</span>
+                    <a href="https://maps.app.goo.gl/fWwpAPAGEajmwCvR6" class="eat-drink-text-header text">MORUS
+                        ALBA</a>
+                    <span class="adaptive-smalltext eat-drink-text ">Vini e cocktail, taglieri e specialità di pesce
+                        fronte mare</span>
                 </div>
             </div>
 
 
             <div class="to-eat-container">
-                <img class="drink-img" src="assets/Margherita.png" alt="Brioche" />
+                <img class="drink-img" src="assets/Cannolo.png" alt="Cannolo" />
                 <div class="eat-text-container">
-                    <span class="eat-drink-text-header text">A18 - Uscita Giarre </span>
-                    <span class="adaptive-smalltext eat-drink-text ">Saremmo lieti di provvedere al vostro</span>
+                    <a href="https://maps.app.goo.gl/zJQ2EkxyErBijYcx6" class="eat-drink-text-header text">PASTICCERIA
+                        BELLIA</a>
+                    <span class="adaptive-smalltext eat-drink-text ">Cannoli, cassate, babà e altri dolci della
+                        tradizione</span>
                 </div>
             </div>
 
 
             <div class="to-eat-container">
-                <img class="drink-img" src="assets/Granita.png" alt="Birra" />
-                <div class="eat-text-container">
-                    <span class="eat-drink-text-header text">A18 - Uscita Giarre </span>
-                    <span class="adaptive-smalltext eat-drink-text ">Saremmo lieti di provvedere al vostro</span>
-                </div>
-            </div>
-
-
-            <div class="to-eat-container">
-                <div style="padding: 0 4vw">
-                    <img style="width:12vw" class="drink-img" src="assets/Calice.png" alt="Calice" />
+                <div class="drink-img-container">
+                    <img class="drink-img-scaled" class="drink-img" src="assets/Birra.png" alt="Birra" />
                 </div>
                 <div class="eat-text-container">
-                    <span class="eat-drink-text-header text">A18 - Uscita Giarre </span>
+                    <a href="https://maps.app.goo.gl/d2354VpHGXjuR6jY8" class="eat-drink-text-header text">BIRRERIA
+                        RIPOSTO</a>
                     <span class="adaptive-smalltext eat-drink-text">
-                        Saremmo lieti di provvedere al vostro
+                        Birre e sfizi culinari in una cornice suggestiva e ricercata
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="to-eat-container">
+                <div class="drink-img-container">
+                    <img class="drink-img-scaled" src="assets/Calice.png" alt="Calice" />
+                </div>
+                <div class="eat-text-container">
+                    <a href="https://maps.app.goo.gl/TXevNHckFqH9GUKk6" class="eat-drink-text-header text">GLASS</a>
+                    <span class="adaptive-smalltext eat-drink-text">
+                        Enoteca e bistrot in un vicolo nel cuore di Riposto
+                    </span>
+                </div>
+
+            </div>
+
+
+
+            <div class="to-eat-container">
+                <img class="drink-img" src="assets/Pizza.png" alt="Pizza" />
+                <div class="eat-text-container">
+                    <a href="https://maps.app.goo.gl/qLJqtozvmjZDY9y78"
+                        class="eat-drink-text-header text">CRESCENZIO</a>
+                    <span class="adaptive-smalltext eat-drink-text ">Pizza "due spicchi" Gambero Rosso a Riposto</span>
+                </div>
+            </div>
+
+            <div class="to-eat-container">
+                <img class="drink-img" src="assets/Pizza.png" alt="Pizza" />
+                <div class="eat-text-container">
+                    <a href="https://maps.app.goo.gl/qLJqtozvmjZDY9y78"
+                        class="eat-drink-text-header text">PLACEHOLDER</a>
+                    <span class="adaptive-smalltext eat-drink-text ">sticazzi sticazzi sticazzi sticazzi sticazzi
                     </span>
                 </div>
             </div>
-
 
 
         </div>
