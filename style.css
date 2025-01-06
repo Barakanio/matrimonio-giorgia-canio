@@ -90,6 +90,11 @@ div {
     font-family: 'Cormorant Garamond', serif;
 }
 
+span {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
 /* Basic font settings  */
 h1,
 h2,
@@ -255,26 +260,38 @@ p.bigtext {
     color: var(--beige)
 }
 
-.menu-icon {
-    color:var(--light-green)
+#return-icon-luna {
+    color: var(--green);
+    font-size: 50px;
 }
 
-/* Nuova classe adattiva basata su bigtext */
-.adaptive-bigtext {
-    font-family: 'Cormorant Garamond', serif;
-    /* Inherits font from bigtext */
+.menu-icon {
+    color: var(--light-green)
+}
+
+
+.text {
     color: var(--text);
-    /* Usa il colore della variabile predefinita */
     font-weight: 400;
-    /* Mantiene lo stile del font */
+}
+
+
+.adaptive-bigtext {
+    color: var(--text);
+    font-weight: 400;
     font-size: calc(100vw/39);
     padding: 0px;
-    /* Eredita il padding */
     margin: 0 auto;
-    /* Centra il blocco */
     text-align: center;
-    /* Allinea il testo al centro */
-    /*white-space: nowrap;*/
+}
+
+.adaptive-smalltext {
+    color: var(--text);
+    font-weight: 400;
+    font-size: calc(100vw/45);
+    padding: 0px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Nuova classe adattiva basata su bigtext */
@@ -656,7 +673,7 @@ div.navigation {
     position: fixed;
     display: flex;
     flex-direction: row;
-    width: 100vw; 
+    width: 100vw;
     bottom: 5%;
     z-index: 4;
 }
@@ -732,7 +749,7 @@ div.navigation a.logo:hover .test {
 }
 
 .internal section.hero {
-    padding: 0em 10em;
+    height: 95vh;
 }
 
 .internal h1 {
@@ -800,6 +817,38 @@ p.description {
 
 #location .column img {
     width: 100%;
+}
+
+.location-img {
+    margin-bottom: 5px;
+    width: 20vh;
+    height: auto;
+}
+
+.drink-img {
+    width: 20vw
+}
+
+.eat-drink-text-header {
+    font-size: 30px;
+}
+
+.eat-text-container {
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start !important;
+}
+
+.to-eat-container {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.eat-drink-text {
+    text-align: left;
 }
 
 .icon {
@@ -1402,6 +1451,9 @@ RESPONSIVENESS
     height: var(--return-arrow-size);
 }
 
+#drink {
+    height:110vh;
+}
 
 @media (max-width: 1200px) {
     .home h1 {
@@ -1412,6 +1464,19 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
+
+    .adaptive-bigtext {
+        font-size: 40px;
+    }
+
+    .adaptive-smalltext {
+        font-size: 20px;
+    }
+
+    #return-icon-luna {
+        font-size: 40px;
+    }
+
     .internal .navigation {
         position: fixed;
         bottom: 0px;
@@ -1641,9 +1706,14 @@ RESPONSIVENESS
 
 }
 
+
+
 /* PHONES */
 @media (max-width: 430px) {
-    
+    #return-icon-luna {
+        font-size: 30px;
+    }
+
     #return-arrow {
         width: var(--return-arrow-size-small);
         height: var(--return-arrow-size-small);
@@ -1686,7 +1756,11 @@ RESPONSIVENESS
     }
 
     .adaptive-bigtext {
-        font-size: 30px;
+        font-size: 27px;
+    }
+
+    .adaptive-smalltext {
+        font-size: 17px;
     }
 
     .welcome-text {
@@ -1796,6 +1870,20 @@ RESPONSIVENESS
     .honeymoon span.iban_details {
         font-size: 1.2rem;
     } */
+
+}
+
+
+@media (max-width: 330px) {
+
+    .adaptive-bigtext {
+        font-size: 20px;
+    }
+
+    .adaptive-smalltext {
+        font-size: 15px;
+    }
+
 
 }
 
