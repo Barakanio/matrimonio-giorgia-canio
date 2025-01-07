@@ -967,6 +967,13 @@ TEXT HIGHLIGHT
 ANIMATIONS
 ***/
 
+.arrow-bounce-top {
+    position: absolute;
+    color: var(--green);
+    top: 2vh;
+    z-index:10
+}
+
 .arrow-bounce {
     position: absolute;
     color: var(--light-green);
@@ -974,6 +981,10 @@ ANIMATIONS
 }
 
 .arrow-bounce i {
+    opacity: 30%;
+}
+
+.arrow-bounce-top i {
     opacity: 30%;
 }
 
@@ -1547,7 +1558,7 @@ RESPONSIVENESS
         width: 0px;
         display: none;
     }
-    
+
     .menu-item:hover .menu-text {
         opacity: 0;
         /* Show text on hover */
@@ -1765,9 +1776,9 @@ RESPONSIVENESS
         margin-top: 50px
     }
 
-    #organizzazione {
+    /*#organizzazione {
         align-items: flex-start !important;
-    }
+    }*/
 
 
     .ulivo {
@@ -1920,7 +1931,7 @@ RESPONSIVENESS
     }
 
     .adaptive-bigtext {
-        font-size: 27px;
+        font-size: 30px;
     }
 
     .adaptive-smalltext {
@@ -2169,7 +2180,7 @@ ALL OTHER UGLY STUFF
     /* Immagine e testo affiancati */
     align-items: center;
     /* Centra verticalmente */
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     /* L’immagine sta a sinistra, il testo a destra */
     height: 100vh;
     /* Occupa interamente la viewport (o come preferisci) */
@@ -2224,6 +2235,10 @@ ALL OTHER UGLY STUFF
     transform: translateX(-50%);
     z-index: 10;
     /* numero più alto di quello dell’immagine */
+}
+
+#welcome .arrow-bounce {
+    color: var(--beige)
 }
 
 
@@ -2284,7 +2299,7 @@ ALL OTHER UGLY STUFF
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+   /* justify-content: flex-start;*/
     height: 100vh;
 }
 
