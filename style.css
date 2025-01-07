@@ -1554,6 +1554,12 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
+
+    .luna-text´ {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     #lunadimiele {
         align-items: flex-start;
         justify-content: flex-start !important;
@@ -1922,7 +1928,7 @@ RESPONSIVENESS
     }
 
     .partecipazione-mobile-text {
-        padding: 0 3vw;
+        padding: 20px 0 20px 0;
     }
 
     .dono {
