@@ -1544,7 +1544,8 @@ RESPONSIVENESS
 /* TABLETS */
 @media (max-width: 1024px) {
     .menu-text {
-        width:0px;
+        width: 0px;
+        display: none;
     }
 
     #mezzi-container {
@@ -1865,6 +1866,7 @@ RESPONSIVENESS
     #return-icon-luna {
         font-size: 30px;
     }
+
     /* width */
     ::-webkit-scrollbar {
         width: 0px;
