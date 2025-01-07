@@ -1547,6 +1547,11 @@ RESPONSIVENESS
         width: 0px;
         display: none;
     }
+    
+    .menu-item:hover .menu-text {
+        opacity: 0;
+        /* Show text on hover */
+    }
 
     #mezzi-container {
         height: 80% !important;
