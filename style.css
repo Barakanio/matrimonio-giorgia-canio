@@ -2383,7 +2383,7 @@ HONEYMOON
     /* Estende gli elementi per riempire l'altezza */
     justify-content: flex-end;
     /* Distribuisce gli elementi */
-    height: 100vh;
+    height: 100dvh;
     width: 90vw;
     /* Imposta l'altezza della sezione */
     padding: 0 0 0 2%;
