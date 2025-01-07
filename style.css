@@ -971,7 +971,7 @@ ANIMATIONS
     position: absolute;
     color: var(--green);
     top: 2vh;
-    z-index:10
+    z-index: 10
 }
 
 .arrow-bounce {
@@ -1554,6 +1554,16 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
+    #lunadimiele {
+        align-items: flex-start;
+        justify-content: flex-start !important;
+    }
+
+    #organizzazione {
+        align-items: flex-start !important;
+        justify-content: flex-start;
+    }
+
     .menu-text {
         width: 0px;
         display: none;
@@ -2299,9 +2309,11 @@ ALL OTHER UGLY STUFF
     display: flex;
     flex-direction: row;
     align-items: center;
-   /* justify-content: flex-start;*/
+    justify-content: center;
     height: 100vh;
 }
+
+
 
 /* Stile per l'immagine della lapa a destra */
 #lunadimiele img.lapa-right {
