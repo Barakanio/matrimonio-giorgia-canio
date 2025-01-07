@@ -262,7 +262,7 @@ p.bigtext {
 
 #return-icon-luna {
     color: var(--green);
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .menu-icon {
@@ -1542,7 +1542,7 @@ RESPONSIVENESS
 }
 
 .location-img {
-    margin-right: 15px;
+    margin-right: 5vw;
 }
 
 @media (max-width: 1200px) {
