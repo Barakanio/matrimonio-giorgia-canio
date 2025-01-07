@@ -1510,6 +1510,25 @@ ANIMATIONS
 /***
 RESPONSIVENESS
 ***/
+
+.ficco {
+    height: 50vh;
+    width: auto;
+    bottom: 0px;
+    position: absolute;
+}
+
+#ficchi-sinistra {
+    left: 0px;
+}
+
+#ficchi-destra {
+    right: 0px;
+    display: none;
+}
+
+
+
 #return-arrow-container {
     position: absolute;
     top: 20px;
@@ -1554,7 +1573,10 @@ RESPONSIVENESS
 
 /* TABLETS */
 @media (max-width: 1024px) {
-
+    .ficco {
+        height: auto;
+        width: 60vw;;
+    }
     .luna-text´ {
         padding-top: 20px;
         padding-bottom: 20px;
