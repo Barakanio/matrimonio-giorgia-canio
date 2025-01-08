@@ -869,7 +869,7 @@ p.description {
     height: auto;
 }
 
-#locations-container {
+.locations-container {
     height: 200%;
     display: grid;
     grid-template-columns: auto auto;
@@ -880,30 +880,30 @@ p.description {
     align-items: start;
 }
 
-.drink-img {
+.experience-img {
     width: 10vw
 }
 
-.drink-img-scaled {
+.experience-img-scaled {
     width: 5vw
 }
 
-.drink-img-container {
+.experience-img-container {
     padding: 0 2.4vw
 }
 
-.eat-drink-text-header {
+.experience-text-header {
     font-size: 24px;
     text-align: left;
 }
 
-.eat-text-container {
+.experience-text-container {
     margin-left: 10px;
     display: flex;
     align-items: flex-start !important;
 }
 
-.to-eat-container {
+.experience-container {
 
     display: flex;
     flex-direction: row;
@@ -912,7 +912,7 @@ p.description {
 
 }
 
-.eat-drink-text {
+.experience-text {
     text-align: left;
 }
 
@@ -1546,10 +1546,11 @@ RESPONSIVENESS
     height: var(--return-arrow-size);
 }
 
-#drink {
-    height: auto;
-    padding-bottom: 50px;
+.experience-section {
+    height: auto !important;
+    padding-bottom: 50px !important;
 }
+
 
 .mezzi-header {
     margin: 0px;
@@ -1638,33 +1639,33 @@ RESPONSIVENESS
         display: none;
     }
 
-    #drink {
-        height: auto;
-        padding-bottom: 50px;
+    .experience-section {
+        height: auto !important;
+        padding-bottom: 50px !important;
     }
 
 
-    #locations-container {
+    .locations-container {
         grid-template-columns: none;
         grid-row-gap: 1vh;
         padding: 5%;
 
     }
 
-    .to-eat-container {
+    .experience-container {
         margin-top: 5vh;
         align-items: center;
     }
 
-    .drink-img {
+    .experience-img {
         width: 20vw
     }
 
-    .drink-img-scaled {
+    .experience-img-scaled {
         width: 12vw
     }
 
-    .drink-img-container {
+    .experience-img-container {
         padding: 0 3.75vw
     }
 
