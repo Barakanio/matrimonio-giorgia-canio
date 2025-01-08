@@ -1527,6 +1527,14 @@ RESPONSIVENESS
     display: none;
 }
 
+.active {
+    color:var(--beige)
+}
+
+.active-text {
+    opacity: 1 !important;
+    color: var(--beige) !important
+}
 
 
 #return-arrow-container {
