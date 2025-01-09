@@ -299,7 +299,7 @@ p.bigtext {
 .adaptive-smalltext {
     color: var(--text);
     font-weight: 400;
-    font-size: calc(100vw/45);
+    font-size: 40px;
     padding: 0px;
     margin: 0 auto;
     text-align: center;
@@ -893,7 +893,7 @@ p.description {
 }
 
 .experience-text-header {
-    font-size: 24px;
+    font-size: 40px;
     text-align: left;
 }
 
@@ -1528,7 +1528,7 @@ RESPONSIVENESS
 }
 
 .active {
-    color:var(--beige)
+    color: var(--beige)
 }
 
 .active-text {
@@ -1580,12 +1580,32 @@ RESPONSIVENESS
 
 }
 
+.double-experience-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
 /* TABLETS */
 @media (max-width: 1024px) {
+    .double-experience-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+
+    .experience-text-header {
+        font-size: 24px;
+        text-align: left;
+    }
+
     .ficco {
         height: auto;
-        width: 60vw;;
+        width: 60vw;
+        ;
     }
+
     .luna-text´ {
         padding-top: 20px;
         padding-bottom: 20px;
