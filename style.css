@@ -299,7 +299,7 @@ p.bigtext {
 .adaptive-smalltext {
     color: var(--text);
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     padding: 0px;
     margin: 0 auto;
     text-align: center;
@@ -872,7 +872,7 @@ p.description {
 .locations-container {
     height: 200%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40vw 40vw;
     grid-row-gap: 10vh;
     justify-content: space-between;
     column-gap: 5vw;
