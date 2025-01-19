@@ -290,7 +290,7 @@ p.bigtext {
 .adaptive-bigtext {
     color: var(--text);
     font-weight: 400;
-    font-size: calc(100vw/39);
+    font-size: 40px;
     padding: 0px;
     margin: 0 auto;
     text-align: center;
@@ -299,7 +299,7 @@ p.bigtext {
 .adaptive-smalltext {
     color: var(--text);
     font-weight: 400;
-    font-size: 35px;
+    font-size: 30px;
     padding: 0px;
     margin: 0 auto;
     text-align: center;
@@ -1583,7 +1583,9 @@ RESPONSIVENESS
 
 .double-experience-container {
     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
